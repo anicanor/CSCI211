@@ -1,0 +1,320 @@
+130828  9:57:25 [Note] Plugin 'FEDERATED' is disabled.
+130828  9:57:25 InnoDB: The InnoDB memory heap is disabled
+130828  9:57:25 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130828  9:57:25 InnoDB: Compressed tables use zlib 1.2.6
+130828  9:57:25 InnoDB: Using Linux native AIO
+130828  9:57:25 InnoDB: Initializing buffer pool, size = 80.0M
+130828  9:57:25 InnoDB: Completed initialization of buffer pool
+InnoDB: The first specified data file ./ibdata1 did not exist:
+InnoDB: a new database to be created!
+130828  9:57:26  InnoDB: Setting file ./ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+130828  9:57:26  InnoDB: Log file ./ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file ./ib_logfile0 size to 64 MB
+InnoDB: Database physically writes the file full: wait...
+130828  9:57:32  InnoDB: Log file ./ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file ./ib_logfile1 size to 64 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: 127 rollback segment(s) active.
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+130828  9:57:40  InnoDB: Waiting for the background threads to start
+130828  9:57:41 InnoDB: 1.1.8 started; log sequence number 0
+130828  9:57:42 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130828 10:02:35 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130828 10:02:35  InnoDB: Starting shutdown...
+130828 10:02:36  InnoDB: Shutdown completed; log sequence number 1711569
+130828 10:02:36 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130904  9:56:57 [Note] Plugin 'FEDERATED' is disabled.
+130904  9:56:57 InnoDB: The InnoDB memory heap is disabled
+130904  9:56:57 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130904  9:56:57 InnoDB: Compressed tables use zlib 1.2.6
+130904  9:56:57 InnoDB: Using Linux native AIO
+130904  9:56:57 InnoDB: Initializing buffer pool, size = 80.0M
+130904  9:56:57 InnoDB: Completed initialization of buffer pool
+130904  9:56:57 InnoDB: highest supported file format is Barracuda.
+130904  9:56:59  InnoDB: Waiting for the background threads to start
+130904  9:57:00 InnoDB: 1.1.8 started; log sequence number 1711569
+130904  9:57:00 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130904 10:54:07 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130904 10:54:07  InnoDB: Starting shutdown...
+130904 10:54:09  InnoDB: Shutdown completed; log sequence number 1711589
+130904 10:54:09 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130909  9:53:04 [Note] Plugin 'FEDERATED' is disabled.
+130909  9:53:04 InnoDB: The InnoDB memory heap is disabled
+130909  9:53:04 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130909  9:53:04 InnoDB: Compressed tables use zlib 1.2.6
+130909  9:53:04 InnoDB: Using Linux native AIO
+130909  9:53:04 InnoDB: Initializing buffer pool, size = 80.0M
+130909  9:53:04 InnoDB: Completed initialization of buffer pool
+130909  9:53:04 InnoDB: highest supported file format is Barracuda.
+130909  9:53:05  InnoDB: Waiting for the background threads to start
+130909  9:53:06 InnoDB: 1.1.8 started; log sequence number 1711589
+130909  9:53:06 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130909 10:51:05 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130909 10:51:05  InnoDB: Starting shutdown...
+130909 10:51:07  InnoDB: Shutdown completed; log sequence number 1711609
+130909 10:51:07 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130911  9:56:00 [Note] Plugin 'FEDERATED' is disabled.
+130911  9:56:00 InnoDB: The InnoDB memory heap is disabled
+130911  9:56:00 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130911  9:56:00 InnoDB: Compressed tables use zlib 1.2.6
+130911  9:56:00 InnoDB: Using Linux native AIO
+130911  9:56:00 InnoDB: Initializing buffer pool, size = 80.0M
+130911  9:56:01 InnoDB: Completed initialization of buffer pool
+130911  9:56:01 InnoDB: highest supported file format is Barracuda.
+130911  9:56:02  InnoDB: Waiting for the background threads to start
+130911  9:56:03 InnoDB: 1.1.8 started; log sequence number 1711609
+130911  9:56:04 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130911 10:51:11 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130911 10:51:11  InnoDB: Starting shutdown...
+130911 10:51:12  InnoDB: Shutdown completed; log sequence number 1711645
+130911 10:51:12 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130918  9:54:37 [Note] Plugin 'FEDERATED' is disabled.
+130918  9:54:37 InnoDB: The InnoDB memory heap is disabled
+130918  9:54:37 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130918  9:54:37 InnoDB: Compressed tables use zlib 1.2.6
+130918  9:54:37 InnoDB: Using Linux native AIO
+130918  9:54:37 InnoDB: Initializing buffer pool, size = 80.0M
+130918  9:54:37 InnoDB: Completed initialization of buffer pool
+130918  9:54:37 InnoDB: highest supported file format is Barracuda.
+130918  9:54:37  InnoDB: Waiting for the background threads to start
+130918  9:54:38 InnoDB: 1.1.8 started; log sequence number 1711645
+130918  9:54:38 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130918 10:50:21 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130918 10:50:21  InnoDB: Starting shutdown...
+130918 10:50:22  InnoDB: Shutdown completed; log sequence number 1711665
+130918 10:50:22 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130920 13:04:36 [Note] Plugin 'FEDERATED' is disabled.
+130920 13:04:36 InnoDB: The InnoDB memory heap is disabled
+130920 13:04:36 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130920 13:04:36 InnoDB: Compressed tables use zlib 1.2.6
+130920 13:04:36 InnoDB: Using Linux native AIO
+130920 13:04:36 InnoDB: Initializing buffer pool, size = 80.0M
+130920 13:04:36 InnoDB: Completed initialization of buffer pool
+130920 13:04:36 InnoDB: highest supported file format is Barracuda.
+130920 13:04:39  InnoDB: Waiting for the background threads to start
+130920 13:04:40 InnoDB: 1.1.8 started; log sequence number 1711665
+130920 13:04:40 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130920 13:46:43 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130920 13:46:43  InnoDB: Starting shutdown...
+130920 13:46:44  InnoDB: Shutdown completed; log sequence number 1711685
+130920 13:46:44 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130923  9:54:52 [Note] Plugin 'FEDERATED' is disabled.
+130923  9:54:52 InnoDB: The InnoDB memory heap is disabled
+130923  9:54:52 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130923  9:54:52 InnoDB: Compressed tables use zlib 1.2.6
+130923  9:54:52 InnoDB: Using Linux native AIO
+130923  9:54:52 InnoDB: Initializing buffer pool, size = 80.0M
+130923  9:54:52 InnoDB: Completed initialization of buffer pool
+130923  9:54:52 InnoDB: highest supported file format is Barracuda.
+130923  9:54:54  InnoDB: Waiting for the background threads to start
+130923  9:54:55 InnoDB: 1.1.8 started; log sequence number 1711685
+130923  9:54:55 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-11/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130923 10:14:56 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130923 10:14:56  InnoDB: Starting shutdown...
+130923 10:14:58  InnoDB: Shutdown completed; log sequence number 1711705
+130923 10:14:58 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130925  9:55:34 [Note] Plugin 'FEDERATED' is disabled.
+130925  9:55:34 InnoDB: The InnoDB memory heap is disabled
+130925  9:55:34 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130925  9:55:34 InnoDB: Compressed tables use zlib 1.2.6
+130925  9:55:34 InnoDB: Using Linux native AIO
+130925  9:55:34 InnoDB: Initializing buffer pool, size = 80.0M
+130925  9:55:34 InnoDB: Completed initialization of buffer pool
+130925  9:55:34 InnoDB: highest supported file format is Barracuda.
+130925  9:55:36  InnoDB: Waiting for the background threads to start
+130925  9:55:37 InnoDB: 1.1.8 started; log sequence number 1711705
+130925  9:55:38 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130925 10:54:18 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130925 10:54:18  InnoDB: Starting shutdown...
+130925 10:54:20  InnoDB: Shutdown completed; log sequence number 1711725
+130925 10:54:20 [Note] /usr/libexec/mysqld: Shutdown complete
+
+130927 14:16:25 [Note] Plugin 'FEDERATED' is disabled.
+130927 14:16:25 InnoDB: The InnoDB memory heap is disabled
+130927 14:16:25 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+130927 14:16:25 InnoDB: Compressed tables use zlib 1.2.6
+130927 14:16:25 InnoDB: Using Linux native AIO
+130927 14:16:25 InnoDB: Initializing buffer pool, size = 80.0M
+130927 14:16:25 InnoDB: Completed initialization of buffer pool
+130927 14:16:25 InnoDB: highest supported file format is Barracuda.
+130927 14:16:27  InnoDB: Waiting for the background threads to start
+130927 14:16:28 InnoDB: 1.1.8 started; log sequence number 1711725
+130927 14:16:28 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+130927 15:05:08 [Note] /usr/libexec/mysqld: Normal shutdown
+
+130927 15:05:08  InnoDB: Starting shutdown...
+130927 15:05:10  InnoDB: Shutdown completed; log sequence number 1711745
+130927 15:05:10 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131002  9:57:25 [Note] Plugin 'FEDERATED' is disabled.
+131002  9:57:25 InnoDB: The InnoDB memory heap is disabled
+131002  9:57:25 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131002  9:57:25 InnoDB: Compressed tables use zlib 1.2.6
+131002  9:57:25 InnoDB: Using Linux native AIO
+131002  9:57:25 InnoDB: Initializing buffer pool, size = 80.0M
+131002  9:57:25 InnoDB: Completed initialization of buffer pool
+131002  9:57:25 InnoDB: highest supported file format is Barracuda.
+131002  9:57:26  InnoDB: Waiting for the background threads to start
+131002  9:57:27 InnoDB: 1.1.8 started; log sequence number 1711745
+131002  9:57:27 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131002 10:51:19 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131002 10:51:19  InnoDB: Starting shutdown...
+131002 10:51:21  InnoDB: Shutdown completed; log sequence number 1711765
+131002 10:51:21 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131007  9:53:08 [Note] Plugin 'FEDERATED' is disabled.
+131007  9:53:08 InnoDB: The InnoDB memory heap is disabled
+131007  9:53:08 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131007  9:53:08 InnoDB: Compressed tables use zlib 1.2.6
+131007  9:53:08 InnoDB: Using Linux native AIO
+131007  9:53:08 InnoDB: Initializing buffer pool, size = 80.0M
+131007  9:53:08 InnoDB: Completed initialization of buffer pool
+131007  9:53:08 InnoDB: highest supported file format is Barracuda.
+131007  9:53:08  InnoDB: Waiting for the background threads to start
+131007  9:53:09 InnoDB: 1.1.8 started; log sequence number 1711765
+131007  9:53:09 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-15/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131007 10:23:03 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131007 10:23:03  InnoDB: Starting shutdown...
+131007 10:23:04  InnoDB: Shutdown completed; log sequence number 1711785
+131007 10:23:04 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131009  9:53:38 [Note] Plugin 'FEDERATED' is disabled.
+131009  9:53:38 InnoDB: The InnoDB memory heap is disabled
+131009  9:53:38 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131009  9:53:38 InnoDB: Compressed tables use zlib 1.2.6
+131009  9:53:38 InnoDB: Using Linux native AIO
+131009  9:53:38 InnoDB: Initializing buffer pool, size = 80.0M
+131009  9:53:38 InnoDB: Completed initialization of buffer pool
+131009  9:53:38 InnoDB: highest supported file format is Barracuda.
+131009  9:53:39  InnoDB: Waiting for the background threads to start
+131009  9:53:40 InnoDB: 1.1.8 started; log sequence number 1711785
+131009  9:53:40 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-15/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131009 10:43:31 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131009 10:43:31  InnoDB: Starting shutdown...
+131009 10:43:33  InnoDB: Shutdown completed; log sequence number 1711805
+131009 10:43:33 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131016  9:54:37 [Note] Plugin 'FEDERATED' is disabled.
+131016  9:54:37 InnoDB: The InnoDB memory heap is disabled
+131016  9:54:37 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131016  9:54:37 InnoDB: Compressed tables use zlib 1.2.6
+131016  9:54:37 InnoDB: Using Linux native AIO
+131016  9:54:37 InnoDB: Initializing buffer pool, size = 80.0M
+131016  9:54:37 InnoDB: Completed initialization of buffer pool
+131016  9:54:37 InnoDB: highest supported file format is Barracuda.
+131016  9:54:38  InnoDB: Waiting for the background threads to start
+131016  9:54:39 InnoDB: 1.1.8 started; log sequence number 1711805
+131016  9:54:39 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131016 10:59:54 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131016 10:59:54  InnoDB: Starting shutdown...
+131016 10:59:55  InnoDB: Shutdown completed; log sequence number 1711825
+131016 10:59:55 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131106  9:57:55 [Note] Plugin 'FEDERATED' is disabled.
+131106  9:57:55 InnoDB: The InnoDB memory heap is disabled
+131106  9:57:55 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131106  9:57:55 InnoDB: Compressed tables use zlib 1.2.6
+131106  9:57:55 InnoDB: Using Linux native AIO
+131106  9:57:55 InnoDB: Initializing buffer pool, size = 80.0M
+131106  9:57:55 InnoDB: Completed initialization of buffer pool
+131106  9:57:55 InnoDB: highest supported file format is Barracuda.
+131106  9:57:56  InnoDB: Waiting for the background threads to start
+131106  9:57:57 InnoDB: 1.1.8 started; log sequence number 1711825
+131106  9:57:57 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131106 10:08:06 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131106 10:08:06  InnoDB: Starting shutdown...
+131106 10:08:07  InnoDB: Shutdown completed; log sequence number 1711845
+131106 10:08:07 [Note] /usr/libexec/mysqld: Shutdown complete
+
+131211 11:06:18 [Note] Plugin 'FEDERATED' is disabled.
+131211 11:06:18 InnoDB: The InnoDB memory heap is disabled
+131211 11:06:18 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+131211 11:06:18 InnoDB: Compressed tables use zlib 1.2.6
+131211 11:06:18 InnoDB: Using Linux native AIO
+131211 11:06:18 InnoDB: Initializing buffer pool, size = 80.0M
+131211 11:06:18 InnoDB: Completed initialization of buffer pool
+131211 11:06:18 InnoDB: highest supported file format is Barracuda.
+131211 11:06:20  InnoDB: Waiting for the background threads to start
+131211 11:06:21 InnoDB: 1.1.8 started; log sequence number 1711845
+131211 11:06:21 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.29'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-08/mysql.socket'  port: 0  MySQL Community Server (GPL)
+131211 11:30:47 [Note] /usr/libexec/mysqld: Normal shutdown
+
+131211 11:30:47  InnoDB: Starting shutdown...
+131211 11:30:49  InnoDB: Shutdown completed; log sequence number 1711865
+131211 11:30:49 [Note] /usr/libexec/mysqld: Shutdown complete
+
+140127 14:57:29 InnoDB: The InnoDB memory heap is disabled
+140127 14:57:29 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+140127 14:57:29 InnoDB: Compressed tables use zlib 1.2.6
+140127 14:57:29 InnoDB: Using Linux native AIO
+140127 14:57:29 InnoDB: Initializing buffer pool, size = 80.0M
+140127 14:57:29 InnoDB: Completed initialization of buffer pool
+140127 14:57:29 InnoDB: highest supported file format is Barracuda.
+140127 14:57:29  InnoDB: Waiting for the background threads to start
+140127 14:57:30 Percona XtraDB (http://www.percona.com) 5.5.32-MariaDB-30.2 started; log sequence number 1711865
+140127 14:57:30 [Note] Plugin 'FEEDBACK' is disabled.
+140127 14:57:30 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.32-MariaDB'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-09/mysql.socket'  port: 0  MariaDB Server
+140127 14:58:26 [Note] /usr/libexec/mysqld: Normal shutdown
+
+140127 14:58:26  InnoDB: Starting shutdown...
+140127 14:58:27  InnoDB: Shutdown completed; log sequence number 1843081
+140127 14:58:27 [Note] /usr/libexec/mysqld: Shutdown complete
+
+140128 13:53:16 InnoDB: The InnoDB memory heap is disabled
+140128 13:53:16 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+140128 13:53:16 InnoDB: Compressed tables use zlib 1.2.6
+140128 13:53:16 InnoDB: Using Linux native AIO
+140128 13:53:16 InnoDB: Initializing buffer pool, size = 80.0M
+140128 13:53:16 InnoDB: Completed initialization of buffer pool
+140128 13:53:16 InnoDB: highest supported file format is Barracuda.
+140128 13:53:38  InnoDB: Waiting for the background threads to start
+140128 13:53:39 Percona XtraDB (http://www.percona.com) 5.5.32-MariaDB-30.2 started; log sequence number 1843081
+140128 13:53:39 [Note] Plugin 'FEEDBACK' is disabled.
+140128 13:53:41 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.32-MariaDB'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-05/mysql.socket'  port: 0  MariaDB Server
+140128 15:09:08 [Note] /usr/libexec/mysqld: Normal shutdown
+
+140128 15:09:08  InnoDB: Starting shutdown...
+140128 15:09:09  InnoDB: Shutdown completed; log sequence number 1899638
+140128 15:09:09 [Note] /usr/libexec/mysqld: Shutdown complete
+

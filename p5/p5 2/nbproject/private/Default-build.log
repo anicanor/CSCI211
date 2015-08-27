@@ -1,0 +1,4 @@
+g++ -Wall -pedantic -g -c cust.cpp
+g++ -Wall -pedantic -g -c pqueue.cpp
+g++ -Wall -pedantic -g -c sim.cpp
+g++ -Wall -pedantic -g -o sim cust.o pqueue.o sim.o

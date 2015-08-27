@@ -1,0 +1,15 @@
+[$Version]
+update_info=kmail.upd:3.3-move-identities-to-own-file,kmail.upd:3.3-aegypten-emailidentities-split-sign-encr-keys
+
+[General]
+Default Identity=577823034
+
+[Identity #0]
+Dictionary=English (United States of America)
+Identity=Xuan Jin
+Image Location=
+Inline Signature=
+Name=Xuan Jin
+Signature Enabled=false
+Signature Type=disabled
+uoid=577823034

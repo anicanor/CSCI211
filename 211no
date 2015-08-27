@@ -1,0 +1,7 @@
+-o linking
+c pre-processor only  -E include<iostream> // any library 
+-c excutable only
+
+Hello Jason
+
+FI post goods issues

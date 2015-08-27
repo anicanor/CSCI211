@@ -1,0 +1,33 @@
+9/4 notes
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello, world" << endl;
+    return 0;
+}
+
+main is always required, tell the compile where the program starts
+once leave main, then the program is over, main return into a "int"
+
+basic output
+<< compile to cout
+" "
+<< sheveron 
+
+// the compile will ignore this line, just for notes
+/ division 
+cout << "Hello" << endl << "world" << endl
+endl = "/.n"
+";" go at the end of the statement
+
+without a ; means statement continues
+use ./(program name you named) to run the program 
+
+
+
+
+
+

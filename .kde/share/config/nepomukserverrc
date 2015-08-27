@@ -1,0 +1,6 @@
+[$Version]
+update_info=nepomukstrigiservice-migrate.upd:nepomukstrigiservice-migrate
+
+[main Settings]
+Storage Dir[$e]=$HOME/.kde/share/apps/nepomuk/repository/main/
+Used Soprano Backend=virtuosobackend

@@ -1,0 +1,4 @@
+t22: Insert days of week into tree, then call balanced, rebalance, balanced
+Tree is not balanced.
+calling rebalance
+Tree is balanced.

@@ -1,0 +1,18 @@
+140128 15:18:20 InnoDB: The InnoDB memory heap is disabled
+140128 15:18:20 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+140128 15:18:20 InnoDB: Compressed tables use zlib 1.2.6
+140128 15:18:20 InnoDB: Using Linux native AIO
+140128 15:18:20 InnoDB: Initializing buffer pool, size = 80.0M
+140128 15:18:20 InnoDB: Completed initialization of buffer pool
+140128 15:18:20 InnoDB: highest supported file format is Barracuda.
+140128 15:18:23  InnoDB: Waiting for the background threads to start
+140128 15:18:24 Percona XtraDB (http://www.percona.com) 5.5.32-MariaDB-30.2 started; log sequence number 1899638
+140128 15:18:24 [Note] Plugin 'FEEDBACK' is disabled.
+140128 15:18:24 [Note] /usr/libexec/mysqld: ready for connections.
+Version: '5.5.32-MariaDB'  socket: '/user/student/xjin/.local/share/akonadi/socket-o251-05/mysql.socket'  port: 0  MariaDB Server
+140128 16:36:03 [Note] /usr/libexec/mysqld: Normal shutdown
+
+140128 16:36:03  InnoDB: Starting shutdown...
+140128 16:36:04  InnoDB: Shutdown completed; log sequence number 1899658
+140128 16:36:04 [Note] /usr/libexec/mysqld: Shutdown complete
+

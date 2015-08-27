@@ -1,0 +1,5 @@
+< direct right to left
+> direct left to right
+clicker
+g++ -o XXX.out XXX.cpp  //given another excutible name
+

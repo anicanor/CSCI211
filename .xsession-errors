@@ -1,0 +1,1159 @@
+xset:  bad font path element (#10), possible causes are:
+    Directory does not exist or has wrong permissions
+    Directory missing fonts.dir
+    Incorrect font server address or syntax
+startkde: Starting up...
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+kbuildsycoca4 running...
+kbuildsycoca4(5544) KBuildSycoca::recreate: Recreating ksycoca file ("/var/tmp/kdecache-xjin/ksycoca4", version 205)
+kbuildsycoca4(5544) VFolderMenu::pushDocInfo: Menu "applications-kmenuedit.menu" not found.
+kbuildsycoca4(5544) VFolderMenu::processMenu: Processing KDE Legacy dirs for <KDE>
+kbuildsycoca4(5544) VFolderMenu::processKDELegacyDirs:
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry MimeType in ".hidden/kommander.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/"
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry MimeType in "/usr/share/applications/xmms.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry Categories in "/usr/share/applications/eboard.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry Categories in "/usr/share/applications/xboard.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry Categories in "/usr/share/applications/pan.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/kde4"
+kbuildsycoca4(5544) KConfigGroup::readXdgListEntry: List entry Categories in "/usr/share/applications/xsane.desktop" is not compliant with XDG standard (missing trailing semicolon). 
+kbuildsycoca4(5544) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/hildon"
+kbuildsycoca4(5544) VFolderMenu::loadApplications: Looking up applications under "/user/student/xjin/.local/share/applications/"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/mplayer.desktop" specifies undefined mimetype/servicetype "x-mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/installfont.desktop" specifies undefined mimetype/servicetype "fonts/package"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/hildon/calligramobile.desktop" specifies undefined mimetype/servicetype "application/x-words"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/flow.desktop" specifies undefined mimetype/servicetype "application/x-flow"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_part.desktop" specifies undefined mimetype/servicetype "application/x-servicepack"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_part.desktop" specifies undefined mimetype/servicetype "application/lha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_part.desktop" specifies undefined mimetype/servicetype "application/maclha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/opt/google/chrome/google-chrome.desktop" specifies undefined mimetype/servicetype "application/xhtml_xml"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/opt/google/chrome/google-chrome.desktop" specifies undefined mimetype/servicetype "image/webp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kdevelop.desktop" specifies undefined mimetype/servicetype "application/x-kdevelop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "klinkstatus_part.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "klinkstatus_part.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "cantor/cantor_part.desktop" specifies undefined mimetype/servicetype "application/x-cantor"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/cantor.desktop" specifies undefined mimetype/servicetype "application/x-cantor"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kdevelop_ps.desktop" specifies undefined mimetype/servicetype "application/x-kdevelop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kspread_plugin_tool_calendar.desktop" specifies undefined mimetype/servicetype "KSpread/Plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/amarok_append.desktop" specifies undefined mimetype/servicetype "audio/*"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kleopatra_decryptverifyfiles.desktop" specifies undefined mimetype/servicetype "applicaton/pkcs7-signature"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-pat"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gih"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-psp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kodocinfopropspage.desktop" specifies undefined mimetype/servicetype "application/x-words"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/ark_servicemenu.desktop" specifies undefined mimetype/servicetype "application/x-servicepack"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/ark_servicemenu.desktop" specifies undefined mimetype/servicetype "application/lha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/ark_servicemenu.desktop" specifies undefined mimetype/servicetype "application/maclha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gvim.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gvim.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-msmpeg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-qtc"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-ms-asf-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-ms-asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmz"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/scpls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-pls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/vnd.mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-pn-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realmedia-vbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realplayer"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-smil"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "application/x-streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/nsv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-divx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/m4a"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-aac"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-pcm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-3gpp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "video/x-3gpp2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "uri/rtsp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/cdrom_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/cdrom_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/cdwriter_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/cdwriter_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/dvd_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/dvd_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/audiocd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/dvdvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/svcd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-next.desktop" specifies undefined mimetype/servicetype "media/vcd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/words_konqi.desktop" specifies undefined mimetype/servicetype "application/x-words"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-msmpeg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-qtc"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-ms-asf-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-ms-asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmz"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/scpls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-pls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/vnd.mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-pn-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realmedia-vbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realplayer"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-smil"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "application/x-streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/nsv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-divx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/m4a"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-aac"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-pcm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-3gpp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "video/x-3gpp2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "uri/rtsp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-actions.desktop" specifies undefined mimetype/servicetype "inode/directory;"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kerfuffle_clilha.desktop" specifies undefined mimetype/servicetype "application/lha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kerfuffle_clilha.desktop" specifies undefined mimetype/servicetype "application/maclha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/gstreamer.desktop" specifies undefined mimetype/servicetype "x-mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/k3b.desktop" specifies undefined mimetype/servicetype "application/x-iso"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "windowsexethumbnail.desktop" specifies undefined mimetype/servicetype "application/x-msdownload"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-directory.desktop" specifies undefined mimetype/servicetype "inode/directory;"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "fileviewhgplugin.desktop" specifies undefined mimetype/servicetype "FileViewVersionControlPlugin2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/k3b_create_audio_cd.desktop" specifies undefined mimetype/servicetype "audio/*"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-msmpeg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-qtc"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-ms-asf-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-ms-asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmz"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/scpls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/vnd.mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-pn-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realmedia-vbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realplayer"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-smil"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "application/x-streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/nsv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-divx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/m4a"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-aac"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-pcm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-3gpp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "video/x-3gpp2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kplayer.desktop" specifies undefined mimetype/servicetype "uri/rtsp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kalgebra.desktop" specifies undefined mimetype/servicetype "application/x-kalgebra"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "planpart.desktop" specifies undefined mimetype/servicetype "application/x-vnd.kde.plan,application/x-vnd.kde.kplato"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/k3b_write_iso_image.desktop" specifies undefined mimetype/servicetype "application/x-iso"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/k3b_write_iso_image.desktop" specifies undefined mimetype/servicetype "inode/ISO-image"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/flow_konqi.desktop" specifies undefined mimetype/servicetype "application/x-flow"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "videopreview.desktop" specifies undefined mimetype/servicetype "video/*"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/krita_psd.desktop" specifies undefined mimetype/servicetype "image/photoshop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/krita_psd.desktop" specifies undefined mimetype/servicetype "image/x-photoshop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/krita_psd.desktop" specifies undefined mimetype/servicetype "image/x-vnd.adobe.photoshop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/ktorrent.desktop" specifies undefined mimetype/servicetype "application/x-torrent"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-msmpeg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-qtc"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-ms-asf-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-ms-asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmz"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/scpls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-pls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/vnd.mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-pn-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realmedia-vbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realplayer"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-smil"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "application/x-streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/nsv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-divx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/m4a"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-aac"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-pcm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-3gpp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "video/x-3gpp2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "uri/rtsp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/cdrom_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/cdrom_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/cdwriter_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/cdwriter_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/dvd_mounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/dvd_unmounted"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/audiocd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/dvdvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/svcd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/kplayer-play-queue.desktop" specifies undefined mimetype/servicetype "media/vcd;"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "KParts/ReadOnlyPart;"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/mpeg4"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-msmpeg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-qtc"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wmv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-ms-asf-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-ms-asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/asx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-ms-asf"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-ms-wmz"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/scpls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-pls"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/vnd.mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-mpg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-pn-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-pn-realvideo-plugin"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realmedia-vbr"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/vnd.rn-realplayer"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-smil"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "application/x-streamingmedia"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/nsv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-mp1"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-divx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/m4a"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-aac"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-pcm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-3gpp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "video/x-3gpp2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kplayerpart.desktop" specifies undefined mimetype/servicetype "uri/rtsp"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_dndextract.desktop" specifies undefined mimetype/servicetype "application/x-servicepack"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_dndextract.desktop" specifies undefined mimetype/servicetype "application/lha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ark_dndextract.desktop" specifies undefined mimetype/servicetype "application/maclha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "calligrathumbnail.desktop" specifies undefined mimetype/servicetype "application/x-words"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "phononbackends/xine.desktop" specifies undefined mimetype/servicetype "x-mpegurl"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "fontthumbnail.desktop" specifies undefined mimetype/servicetype "fonts/package"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/lokalize.desktop" specifies undefined mimetype/servicetype "application/x-lokalize-project"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/kalgebramobile.desktop" specifies undefined mimetype/servicetype "application/x-kalgebra"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/braindump.desktop" specifies undefined mimetype/servicetype "application/x-braindump"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/dragonplayer_play_dvd.desktop" specifies undefined mimetype/servicetype "media/dvdvideo"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/audiocd_extract.desktop" specifies undefined mimetype/servicetype "media/audiocd"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kerfuffle_libarchive_readonly.desktop" specifies undefined mimetype/servicetype "application/x-servicepack"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/ark.desktop" specifies undefined mimetype/servicetype "application/x-servicepack"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/ark.desktop" specifies undefined mimetype/servicetype "application/lha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/ark.desktop" specifies undefined mimetype/servicetype "application/maclha"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "ServiceMenus/imageconverter.desktop" specifies undefined mimetype/servicetype "image/*"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/calligraactive.desktop" specifies undefined mimetype/servicetype "application/x-words"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/marble.desktop" specifies undefined mimetype/servicetype "application/gpx+xml"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/quanta.desktop" specifies undefined mimetype/servicetype "application/x-kdevelop"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "plasma-kpart.desktop" specifies undefined mimetype/servicetype "KParts/Part"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/kde4/amarok.desktop" specifies undefined mimetype/servicetype "application/x-ogm-audio"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/geeqie.desktop" specifies undefined mimetype/servicetype "image/svg"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/geeqie.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/geeqie.desktop" specifies undefined mimetype/servicetype "image/xpm"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "kfontviewpart.desktop" specifies undefined mimetype/servicetype "fonts/package"
+kbuildsycoca4(5544) KBuildServiceFactory::populateServiceTypes: "flowpart.desktop" specifies undefined mimetype/servicetype "application/x-flow"
+kbuildsycoca4(5544) KMimeAssociations::parseAllMimeAppsList: Parsing "/user/student/xjin/.local/share/applications/mimeapps.list"
+kbuildsycoca4(5544) KBuildSycoca::save: Saving
+kbuildsycoca4(5544) kdemain: Emitting notifyDatabaseChanged ("servicetypes", "xdgdata-mime", "services", "apps")
+QObject::connect: Cannot connect (null)::deviceFound(Device*) to BlueDevilDaemon::deviceFound(Device*)
+QObject::connect: Cannot connect QTimer::timeout() to (null)::stopDiscovery()
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+No outputs have backlight property
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: name 'org.kde.kglobalaccel' had owner '' but we thought it was ':1.5'
+kded(5541)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+kwin(5562) KWin::Extensions::init: Extensions: shape: 0x "11"  composite: 0x "4"  render: 0x "b"  fixes: 0x "50"  non_native_pixmaps:  false
+kwin(5562) KWin::CompositingPrefs::detect: glx version is  1 . 4
+OpenGL vendor string:                   VMware, Inc.
+OpenGL renderer string:                 Gallium 0.4 on llvmpipe (LLVM 0x300)
+OpenGL version string:                  2.1 Mesa 8.0.4
+Driver:                                 LLVMpipe
+GPU class:                              Unknown
+OpenGL version:                         2.1
+Mesa version:                           8.0.4
+X server version:                       1.12.4
+Linux kernel version:                   3.2.29
+Direct rendering:                       yes
+Requires strict binding:                yes
+GLSL shaders:                           no
+Texture NPOT support:                   yes
+kwin(5562) KDecorationPlugins::loadPlugin: kwin : path  "/usr/lib64/kde4/kwin3_oxygen.so"  for  "kwin3_oxygen"
+kwin(5562): ""fsrestore1" - conversion of "0,0,0,0" to QRect failed" 
+kwin(5562) KWin::Extensions::init: Extensions: shape: 0x "11"  composite: 0x "4"  render: 0x "b"  fixes: 0x "50"  non_native_pixmaps:  false
+kwin(5562) KWin::Extensions::init: Extensions: shape: 0x "11"  composite: 0x "4"  render: 0x "b"  fixes: 0x "50"  non_native_pixmaps:  false
+kwin(5562) KWin::Workspace::setupCompositing: Initializing XRender compositing
+kwin(5562) KWin::currentRefreshRate: Refresh rate  60 Hz
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_slidingpopups"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_blur"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: EffectsHandler::loadEffect : Effect  "kwin4_effect_blur"  is not supported 
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_fade"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_desktopgrid"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_slide"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_presentwindows"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_dashboard"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_login"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_startupfeedback"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: EffectsHandler::loadEffect : Effect  "kwin4_effect_startupfeedback"  is not supported 
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_outline"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_taskbarthumbnail"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_logout"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_screenshot"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_translucency"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_highlightwindow"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_zoom"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_dialogparent"
+kwin(5562) KWin::EffectsHandlerImpl::loadEffect: Trying to load  "kwin4_effect_minimizeanimation"
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusObjectPath: invalid path ""
+plasma-desktop(5578)/libplasma Plasma::isPluginVersionCompatible: unversioned plugin detected, may result in instability 
+link XMLID_34_ hasn't been detected!
+link XMLID_34_ hasn't been detected!
+link XMLID_36_ hasn't been detected!
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+kded(5541)/Network Management (NetworkManager backend) ConnectionDbus::fromDbusMap: Setting  "ipv4" not initialized 
+kded(5541)/Network Management (NetworkManager backend) ConnectionDbus::fromDbusMap: Setting  "ipv6" not initialized 
+kded(5541)/Network Management (NetworkManager backend) ConnectionDbus::fromDbusMap: Setting  "802-1x" not initialized 
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+file:///usr/share/apps/plasma/plasmoids/notifier/contents/ui/devicenotifier.qml:166:5: QML QDeclarativeListView_QML_20: Possible anchor loop detected on vertical anchor.
+QGraphicsScene::addItem: item has already been added to this scene
+plasma-desktop(5578)/libakonadi Akonadi::AgentManagerPrivate::createDBusInterface: AgentManager failed to get a valid AgentManager DBus interface. Error is: 1 "org.freedesktop.DBus.Error.NameHasNoOwner" "Could not get owner of name 'org.freedesktop.Akonadi.Control': no such name" 
+plasma-desktop(5578)/libakonadi Akonadi::SessionPrivate::socketError: Socket error occurred: "QLocalSocket::connectToServer: Invalid name" 
+plasma-desktop(5578)/libakonadi Akonadi::SessionPrivate::socketError: Socket error occurred: "QLocalSocket::connectToServer: Invalid name" 
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+search paths:  ("/usr/lib64/java/bin", "/usr/local/bin", "/usr/bin", "/bin", "/usr/games", "/usr/lib64/java/bin", "/opt/cgicc/bin", "/opt/codeblocks/bin", "/opt/ddd/bin", "/opt/dia/bin", "/opt/geany/bin", "/opt/graphviz/bin", "/opt/prolog/bin", "/opt/scite/bin", "/opt/valgrind/bin", "/opt/wxGTK/bin", "/usr/lib64/kde4/libexec", "/usr/lib64/qt/bin", "/usr/share/texmf/bin", ".", "/usr/sbin", "/usr/local/sbin", "/usr/local/libexec", "/usr/libexec", "/opt/mysql/libexec", "/opt/local/lib/mysql5/bin", "/opt/mysql/sbin") 
+Found mysql_install_db:  "/usr/bin/mysql_install_db" 
+Found mysqlcheck:  "/usr/bin/mysqlcheck" 
+link XMLID_34_ hasn't been detected!
+link XMLID_34_ hasn't been detected!
+link XMLID_36_ hasn't been detected!
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 4294967295
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 33554878 ;WMCLASS: "plasma-desktop" : "plasma-desktop" ;Caption: "plasma-desktop" ' : 692919564
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 4294967295
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 33554887 ;WMCLASS: "plasma" : "plasma" ;Caption: "plasma-desktop" ' : 692920387
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Client::configureRequest: KWin::Client(0x1cb7ed0) true false false
+kwin(5562) KWin::Client::configureRequest: PERMITTED 'ID: 33554878 ;WMCLASS: "plasma-desktop" : "plasma-desktop" ;Caption: "plasma-desktop" ' true
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+QGridLayoutEngine::addItem: Cell (0, 1) already taken
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+nepomukservicestub: No service name specified
+nepomukservicestub: Use --help to get a list of available command line options.
+"/usr/bin/kactivitymanagerd(5553)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+"/usr/bin/kactivitymanagerd(5553)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+"/usr/bin/kactivitymanagerd(5553)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+[/usr/bin/nepomukservicestub] Using Virtuoso Version: "6.1.3.3127-pthreads"
+[/usr/bin/nepomukservicestub] Using Virtuoso Version: "6.1.3.3127-pthreads"
+[/usr/bin/nepomukservicestub] void Soprano::VirtuosoController::writeConfigFile(const QString&, const BackendSettings&) "/tmp/virtuoso_hX5628.ini"
+[/usr/bin/nepomukservicestub] Starting Virtuoso server: "/usr/bin/virtuoso-t" ("+foreground", "+configfile", "/tmp/virtuoso_hX5628.ini", "+wait")
+[/usr/bin/nepomukservicestub] "
+"
+[/usr/bin/nepomukservicestub] "		Wed Dec 11 2013
+"
+[/usr/bin/nepomukservicestub] "11:06:21 OpenLink Virtuoso Universal Server
+"
+[/usr/bin/nepomukservicestub] "11:06:21 Version 06.01.3127-pthreads for Linux as of Jul  4 2012
+"
+[/usr/bin/nepomukservicestub] "11:06:21 uses parts of OpenSSL, PCRE, Html Tidy
+"
+[/usr/bin/nepomukservicestub] "11:06:21 Database version 3126
+"
+[/usr/bin/nepomukservicestub] "11:06:21 Entering Lite Mode
+" 
+"11:06:21 SQL Optimizer enabled (max 1000 layouts)
+"
+krunner(5629)/libakonadi Akonadi::AgentManagerPrivate::createDBusInterface: AgentManager failed to get a valid AgentManager DBus interface. Error is: 1 "org.freedesktop.DBus.Error.NameHasNoOwner" "Could not get owner of name 'org.freedesktop.Akonadi.Control': no such name" 
+krunner(5629)/libakonadi Akonadi::SessionPrivate::socketError: Socket error occurred: "QLocalSocket::connectToServer: Invalid name" 
+"/usr/bin/kdeinit4(5629)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+"/usr/bin/kdeinit4(5629)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+"/usr/bin/kdeinit4(5629)" Soprano: "QLocalSocket::connectToServer: Invalid name"
+krunner(5629)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "/user/student/xjin/.kde/share/apps/kabc" 
+krunner(5629) KDevelopSessions::KDevelopSessions: INIT KDEV 
+krunner(5629) KDevelopSessions::loadSessions: LOADSESSION!.>>> 
+QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+krunner(5629)/libplasma Plasma::Package::isValid: Could not find required file mainscript 
+/usr/bin/mysqlcheck: Got error: 1045: Access denied for user 'xjin'@'132.241.18.65' (using password: NO) when trying to connect
+Database "akonadi" opened using driver "QMYSQL" 
+DbInitializer::run() 
+checking table  "SchemaVersionTable" 
+checking table  "ResourceTable" 
+checking table  "CollectionTable" 
+checking table  "MimeTypeTable" 
+checking table  "PimItemTable" 
+checking table  "FlagTable" 
+checking table  "PartTable" 
+checking table  "CollectionAttributeTable" 
+checking relation  "PimItemFlagRelation" 
+checking relation  "CollectionMimeTypeRelation" 
+checking relation  "CollectionPimItemRelation" 
+DbInitializer::run() done 
+skipping update 2 
+skipping update 3 
+skipping update 4 
+skipping update 8 
+skipping update 10 
+skipping update 12 
+skipping update 13 
+skipping update 14 
+skipping update 15 
+skipping update 16 
+skipping update 17 
+skipping update 18 
+skipping update 19 
+skipping update 20 
+Nepomuk Query Server not available 
+DataStore::unhideAllPimItems() 
+Database "akonadi" opened using driver "QMYSQL" 
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+PLUGINS:  "/usr/share/akonadi/agents" 
+PLUGINS:  ("akonadinepomukfeederagent.desktop", "akonotesresource.desktop", "birthdaysresource.desktop", "contactsresource.desktop", "davgroupwareresource.desktop", "icalresource.desktop", "imapresource.desktop", "invitationsagent.desktop", "kabcresource.desktop", "kalarmdirresource.desktop", "kalarmresource.desktop", "kcalresource.desktop", "kdeaccountsresource.desktop", "knutresource.desktop", "kolabproxyresource.desktop", "localbookmarksresource.desktop", "maildirresource.desktop", "maildispatcheragent.desktop", "mailfilteragent.desktop", "mboxresource.desktop", "microblog.desktop", "mixedmaildirresource.desktop", "mtdummyresource.desktop", "nepomuktagresource.desktop", "nntpresource.desktop", "notesresource.desktop", "openxchangeresource.desktop", "pop3resource.desktop", "vcarddirresource.desktop", "vcardresource.desktop") 
+search paths:  ("/usr/lib64/java/bin", "/usr/local/bin", "/usr/bin", "/bin", "/usr/games", "/usr/lib64/java/bin", "/opt/cgicc/bin", "/opt/codeblocks/bin", "/opt/ddd/bin", "/opt/dia/bin", "/opt/geany/bin", "/opt/graphviz/bin", "/opt/prolog/bin", "/opt/scite/bin", "/opt/valgrind/bin", "/opt/wxGTK/bin", "/usr/lib64/kde4/libexec", "/usr/lib64/qt/bin", "/usr/share/texmf/bin", ".") 
+PLUGINS inserting:  "akonadi_nepomuk_feeder" 0 ("Unique", "Autostart", "NoConfig") 
+PLUGINS inserting:  "akonadi_akonotes_resource" 1 ("Resource", "Notes") 
+PLUGINS inserting:  "akonadi_birthdays_resource" 0 ("Resource", "Unique") 
+PLUGINS inserting:  "akonadi_contacts_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_davgroupware_resource" 0 ("Resource", "FreeBusyProvider") 
+PLUGINS inserting:  "akonadi_ical_resource" 1 ("Resource") 
+PLUGINS inserting:  "akonadi_imap_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_invitations_agent" 0 ("NoConfig") 
+PLUGINS inserting:  "akonadi_kabc_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kalarm_dir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kalarm_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kcal_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kdeaccounts_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_knut_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kolabproxy_resource" 0 ("Resource", "Unique") 
+PLUGINS inserting:  "akonadi_localbookmarks_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_maildir_resource" 1 ("Resource") 
+PLUGINS inserting:  "akonadi_maildispatcher_agent" 0 ("Unique", "Autostart") 
+PLUGINS inserting:  "akonadi_mailfilter_agent" 0 ("Unique", "Autostart") 
+PLUGINS inserting:  "akonadi_mbox_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_microblog_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_mixedmaildir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_mailtransport_dummy_resource" 0 ("Resource", "MailTransport") 
+PLUGINS inserting:  "akonadi_nepomuktag_resource" 0 ("Resource", "Virtual", "Unique", "NoConfig") 
+PLUGINS inserting:  "akonadi_nntp_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_notes_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_openxchange_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_pop3_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_vcarddir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_vcard_resource" 0 ("Resource") 
+Invalid usage: expected: ./agent_launcher pluginName agentIdentifier 
+Akonadi server is now operational. 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Invalid usage: expected: ./agent_launcher pluginName agentIdentifier 
+search paths:  ("/user/student/xjin/.kde/lib64/kde4/plugins/", "/usr/lib64/kde4/plugins/", "/usr/lib64/qt/plugins", "/usr/bin", "/usr/lib64/kde4/plugins", "/user/student/xjin/.kde/lib64/kde4/", "/usr/lib64/kde4/") 
+search paths:  ("/user/student/xjin/.kde/lib64/kde4/plugins/", "/usr/lib64/kde4/plugins/", "/usr/lib64/qt/plugins", "/usr/bin", "/usr/lib64/kde4/plugins", "/user/student/xjin/.kde/lib64/kde4/", "/usr/lib64/kde4/") 
+search paths:  ("/user/student/xjin/.kde/lib64/kde4/plugins/", "/usr/lib64/kde4/plugins/", "/usr/lib64/qt/plugins", "/usr/bin", "/usr/lib64/kde4/plugins", "/user/student/xjin/.kde/lib64/kde4/", "/usr/lib64/kde4/") 
+Known subscriber "AkonadiAgentServer" subscribes again 
+void Akonadi::NotificationSource::addClientServiceName(const QString&) Notification source "AkonadiAgentServer" now serving: (":1.33", ":1.34") 
+Known subscriber "AkonadiAgentServer" subscribes again 
+void Akonadi::NotificationSource::addClientServiceName(const QString&) Notification source "AkonadiAgentServer" now serving: (":1.33", ":1.34", ":1.32") 
+[/usr/bin/nepomukservicestub] "11:06:23 Checkpoint started
+"
+Agent instance created in separate process. 
+Invalid usage: expected: ./agent_launcher pluQDBusConnection: session D-Bus connection created before QCoreAppliKnown subscriber "AkonadiAgentServer" subscribes again 
+Database "akonadi" opened using driver "QMYSQL" 
+ before QCoreApplication.[/usr/bin/nepomukservicestub] "11:06:23 Server online at 1111 (pid 5635)
+"
+[/usr/bin/nepomukservicestub] Virtuoso started: 5635 
+Soprano::ODBC::ConnectionPool::ConnectionPool(const QString&, const QStringList&, QObject*) "host=localhost:1111;uid=dba;pwd=dba;driver=/usr/lib64/virtodbc_r.so"
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() QThread(0x131ed70)
+[/usr/bin/nepomukservicestub] "/usr/bin/nepomukservicestub(5628)" Soprano: "SQLGetData for data length failed (iODBC Error: [OpenLink][Virtuoso iODBC Driver]CL056: Bookmarks not enable for statement)"
+[/usr/bin/nepomukservicestub] bool Soprano::Virtuoso::DatabaseConfigurator::updateFulltextIndexRules(bool) empty rule name!
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() QThread(0x131ed70)
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() QThread(0x131ed70)
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() Nepomuk::GraphMaintainer(0x1483180)
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() Nepomuk::GraphMaintainer(0x1483180)
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Known subscriber "akonadi_maildispatcher_agent" subscribes again 
+ication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+Known subscriber "akonadi_nepomuk_feeder" subscribes again 
+Known subscriber "akonadi_maildispatcher_agent" subscribes again 
+Known subscriber "akonadi_maildispatcher_agent" subscribes again 
+AkonadiAgentServer(5655)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "/user/student/xjin/.kde/share/apps/korganizer" 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+Nepomuk server already running.
+QGridLayoutEngine::addItem: Cell (0, 1) already taken
+QGridLayoutEngine::addItem: Cell (1, 1) already taken
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Known subscriber "akonadi_mailfilter_agent" subscribes again 
+Known subscriber "akonadi_mailfilter_agent" subscribes again 
+Known subscriber "akonadi_mailfilter_agent" subscribes again 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Known subscriber "akonadi_mailfilter_agent" subscribes again 
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() QThread(0x14f3c00) 
+virtual void Soprano::Server::LocalServer::incomingConnection(quintptr) 
+void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 1 
+virtual void Soprano::Server::LocalServer::incomingConnection(quintptr) 
+void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 2 
+virtual void Soprano::Server::LocalServer::incomingConnection(quintptr) 
+void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 3
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 4
+Akonadi::NepomukSearchEngine(0x1a811a0) QDBusServiceWatcher(0x1aec2d0) 
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 5
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() Soprano::Server::ServerConnection(0x15147e0)
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 6
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() QThread(0x1547eb0, name = "Thread (pooled)")
+[/usr/bin/nepomukservicestub] QObject::connect: Cannot queue arguments of type 'Soprano::Statement'
+(Make sure 'Soprano::Statement' is registered using qRegisterMetaType().)
+[/usr/bin/nepomukservicestub] QObject::connect: Cannot queue arguments of type 'Soprano::Statement'
+(Make sure 'Soprano::Statement' is registered using qRegisterMetaType().)
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() QThread(0x14f3c00)
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr) 
+void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 7 
+Soprano::ODBC::Connection::Connection() Soprano::Server::ServerConnection(0x1554cf0)
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 8
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() Soprano::Server::ServerConnection(0x1563c80)
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::ServerConnection::run() thread done.
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() Soprano::Server::ServerConnection(0x1554cf0)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCore::serverConnectionFinished() 
+virtual Soprano::Server::ServerConnection::~ServerConnection() Removing connection
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCore::serverConnectionFinished() Connection removed. Current count: 7
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::ServerConnection::run() thread done.
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() Soprano::Server::ServerConnection(0x1563c80)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCore::serverConnectionFinished() 
+virtual Soprano::Server::ServerConnection::~ServerConnection() Removing connection
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCore::serverConnectionFinished() Connection removed. Current count: 6
+nepomukservicestub: No service name specified
+nepomukservicestub: Use --help to get a list of available command line options.
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 7
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() Soprano::Server::ServerConnection(0x1563c80)
+nepomukservicestub: No service name specified
+nepomukservicestub: Use --help to get a list of available command line options.
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+nepomukservicestub: No service name specified
+nepomukservicestub: Use --help to get a list of available command line options.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QGridLayoutEngine::addItem: Cell (0, 1) already taken
+QGridLayoutEngine::addItem: Cell (1, 1) already taken
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_ALSA destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+Running Mixer_Backend destructor 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+
+[01mHP Linux Imaging and Printing System (ver. 3.12.9)[0m
+[01mSystem Tray Status Service ver. 2.0[0m
+
+Copyright (c) 2001-14 Hewlett-Packard Development Company, LP
+This software comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to distribute it
+under certain conditions. See COPYING file for more details.
+
+[35;01mwarning: No hp: or hpfax: devices found in any installed CUPS queue. Exiting.[0m
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+New PolkitAgentListener  0xc97ec0 
+Adding new listener  PolkitQt1::Agent::Listener(0xe25b00) for  0xc97ec0 
+Known subscriber "korgac" subscribes again 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+plasma-desktop(5578)/plasma StatusNotifierItemSource::refreshCallback: DBusMenu disabled for this application 
+plasma-desktop(5578)/plasma StatusNotifierItemSource::refreshCallback: DBusMenu disabled for this application 
+QGridLayoutEngine::addItem: Cell (2, 1) already taken
+QGraphicsLinearLayout::removeAt: invalid index 1
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 4294967295
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 33554971 ;WMCLASS: "plasma-desktop" : "plasma-desktop" ;Caption: "plasma-desktop" ' : 692934540
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 692945297
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 33554547 ;WMCLASS: "plasma-desktop" : "plasma-desktop" ;Caption: "plasma-desktop" ' : 692945297
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: Belongs to active application
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 692947649
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 31457378 ;WMCLASS: "terminal" : "terminal" ;Caption: "Terminal" ' : 692947649
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+[/usr/bin/nepomukservicestub] QObject::connect: Cannot connect XSyncBasedPoller::destroyed() to (null)::_k_x11FilterDestroyed()
+QGridLayoutEngine::addItem: Cell (1, 1) already taken
+QGridLayoutEngine::addItem: Cell (2, 1) already taken
+QGridLayoutEngine::addItem: Cell (3, 1) already taken
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::LocalServer::incomingConnection(quintptr)
+[/usr/bin/nepomukservicestub] void Soprano::Server::ServerCorePrivate::addConnection(Soprano::Server::ServerConnection*) New connection. New count: 8
+[/usr/bin/nepomukservicestub] Soprano::ODBC::Connection::Connection() Soprano::Server::ServerConnection(0x14dd2e0)
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: Belongs to active application
+kwin(5562) KWin::Client::configureRequest: KWin::Client(0x1dadc80) true true true
+kwin(5562) KWin::Client::configureRequest: DENIED
+kwin(5562) KWin::Client::configureRequest: KWin::Client(0x1dadc80) true true true
+kwin(5562) KWin::Client::configureRequest: DENIED
+kwin(5562) KWin::Client::configureRequest: KWin::Client(0x1dadc80) true true true
+kwin(5562) KWin::Client::configureRequest: DENIED
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: Belongs to active application
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 693149151
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 31461033 ;WMCLASS: "terminal" : "terminal" ;Caption: "Terminal <2>?" ' : 693149151
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: Belongs to active application
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::brightness: org.kde.powerdevil.backlighthelper.brightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+plasma-desktop(5578)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+QGridLayoutEngine::addItem: Cell (4, 1) already taken
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kded(5541) PowerDevilUPowerBackend::setBrightness: org.kde.powerdevil.backlighthelper.setbrightness failed 
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, ASN: 694377733
+kwin(5562) KWin::Client::readUserTimeMapTimestamp: User timestamp, final: 'ID: 33554547 ;WMCLASS: "plasma-desktop" : "plasma-desktop" ;Caption: "plasma-desktop" ' : 694377733
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: No client active, allowing
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+kwin(5562) KWin::Workspace::allowClientActivation: Activation: Belongs to active application
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+klipper(5740)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+QPainter::begin: Paint device returned engine == 0, type: 2
+QPainter::setCompositionMode: Painter not active
+QPainter::end: Painter not active, aborted
+krunner(5629)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+void Akonadi::NotificationSource::serviceUnregistered(const QString&) Notification source "akonadi_nepomuk_feeder" now serving: () 
+void Akonadi::NotificationSource::unsubscribe() "akonadi_nepomuk_feeder" 
+Application '/usr/bin/akonadi_nepomuk_feeder' exited normally...
+kwin(5562) KWin::Workspace::updateClientArea: screens:  1 desktops:  1
+kwin(5562) KWin::Workspace::updateClientArea: Done.
+Destroying listener
+Removing listener  PolkitQt1::Agent::Listener(0xe25b00) 
+X Error: BadPixmap (invalid Pixmap parameter) 4
+  Major opcode: 54 (X_FreePixmap)
+  Resource id:  0x20001bc
+X Error: BadPixmap (invalid Pixmap parameter) 4
+  Major opcode: 54 (X_FreePixmap)
+  Resource id:  0x20Application '/usr/bin/akonadi_maildispatcher_agent' exited normally...
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::ServerConnection::run() thread done.
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() Soprano::Server::ServerConnection(0x14dd2e0) 
+virtual Soprano::ODBC::Connection::~Connection() QThread(0x1547eb0, name = "Thread (pooled)")
+nection() Removing connection
+[/usr/bin/nepomukservicestub] virtual void Soprano::Server::ServerConnection::run() thread done. 
+virtual Soprano::Server::ServerConnection::~ServerConnection() Removing connection 
+virtual void Soprano::Server::ServerConnection::run() tlocal socket error: QLocalSocket::PeerClosedError 
+void Akonadi::NotificationSource::serviceUnregistered(const QString&) Notification source "akonadi_mailfilter_agent" now serving: () 
+void Akonadi::NotificationSource::unsubscribe() "akonadi_mailfilter_agent" 
+void Akonadi::NotificationSource::serviceUnregistered(const QString&) Notification source "korgac" now serving: () 
+void Akonadi::NotificationSource::unsubscribe() "korgac" 
+[/usr/bin/nepomukservicestub] virtual Soprano::ODBC::Connection::~Connection() QThread(0x131ed70)
+[/usr/bin/nepomukservicestub] Shutting down virtuoso instance 5635
+Application '/usr/bin/akonadi_agent_launcher' exited normally...
+Lost connection to resource "org.freedesktop.Akonadi.Resource.akonadi_akonotes_resource_0" , discarding cached interface 
+Object::disconnect: No such slot QObject::dataUpdated(QString,Plasma::DataEngine::Data)
+Object::disconnect:  (sender name:   'events:2013-11-24:2014-01-04')
+on to resource "org.freedesktop.Akonadi.Resource.akonadi_ical_resource_0" , discarding cached interface 
+Application '/usr/bin/nepomukservicestub nepomukbackupsync' exited normally...
+Application '/usr/bin/nepomukservicestub nepomukfileindexer' exited normally...
+Lost connection to resource "org.freedesktop.Akonadi.Resource.akonadi_maildir_resource_0" , discarding cached interface 
+void Akonadi::NotificationSource::serviceUnregistered(const QString&) Notification source "AkonadiAgentServer" now serving: () 
+void Akonadi::NotificationSource::unsubscribe() "AkonadiAgentServer" 
+krunner(5629)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "/user/student/xjin/.kde/share/apps" 
+krunner(5629)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "/user/student/xjin/.local" 
+krunner(5629)/kio (KDirWatch) KDirWatchPrivate::removeEntry: doesn't know "/user/student/xjin/.kde/share" 
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_zoom"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_login"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_slidingpopups"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_minimizeanimation"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_translucency"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_screenshot"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_slide"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_desktopgrid"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_fade"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_dialogparent"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_highlightwindow"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_taskbarthumbnail"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_presentwindows"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_logout"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_dashboard"
+kwin(5562) KWin::EffectsHandlerImpl::unloadEffect: EffectsHandler::unloadEffect : Unloading Effect :  "kwin4_effect_outline"
+X Error: BadDamage (invalid Damage parameter) 165
+  Extension:    151 (Uknown extension)
+  Minor opcode: 2 (Unknown request)
+  Resource id:  0x1c0029f
+X Error: BadWindow (invalid Window parameter) 3
+  Extension:    138 (Uknown extension)
+  Minor opcode: 6 (Unknown request)
+  Resource id:  0x1800023
+X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 2 (X_ChangeWindowAttributes)
+  Resource id:  0x1800023
+Application '/usr/bin/nepomukservicestub nepomukfilewatch' exited normally...
+void Akonadi::NotificationSource::serviceUnregistered(const QString&) Notification source "plasma-desktop" now serving: () 
+void Akonadi::NotificationSource::unsubscribe() "plasma-desktop" 
+startkde: Shutting down...
+klauncher: Exiting on signal 1
+NepomukServer(5624)/kdecore (KConfigSkeleton) KCoreConfigSkeleton::writeConfig:
+startkde: Running shutdown scripts...
+startkde: Done.
+Control process died, committing suicide!
+terminating service threads 
+terminating connection threads 
+stopping db process 
+/usr/bin/mysqladmin: connect to server at 'db.ecst.csuchico.edu' failed
+error: 'Access denied for user 'xjin'@'132.241.18.65' (using password: NO)'
+D-Bus session bus went down - quitting
+D-Bus session bus went down - quitting
+Application 'akonadiserver' exited normally...
+kded4: Fatal IO error: client killed

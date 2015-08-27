@@ -1,0 +1,14 @@
+printing original list: 
+3
+3
+3
+2
+2
+2
+1
+1
+1
+printing list after removing duplicates: 
+3
+2
+1

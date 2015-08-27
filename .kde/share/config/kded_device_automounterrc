@@ -1,0 +1,37 @@
+[Devices][/org/freedesktop/UDisks/devices/sda1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=14.9 GiB Hard Drive
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks/devices/sda3]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=957.0 MiB Hard Drive
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks/devices/sda5]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=1.4 GiB Hard Drive
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks/devices/sda6]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=1.9 GiB Hard Drive
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks/devices/sda7]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=3.8 GiB Hard Drive
+LastSeenMounted=true
+
+[Devices][/org/kde/fstab/tiger:/export/faculty]
+EverMounted=true
+LastSeenMounted=true
+
+[Devices][/org/kde/fstab/tiger:/export/web]
+EverMounted=true
+LastSeenMounted=true

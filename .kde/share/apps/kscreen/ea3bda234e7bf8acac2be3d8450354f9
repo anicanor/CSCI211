@@ -1,0 +1,1 @@
+[ { "enabled" : true, "id" : "5535b95830c702fe4b43add0413a10bc", "metadata" : { "fullname" : "xrandr-DELL E2209W-F180G9160P0M", "name" : "VGA1" }, "mode" : { "refresh" : 59.9543, "size" : { "height" : 1050, "width" : 1680 } }, "pos" : { "x" : 0, "y" : 0 }, "primary" : true, "rotation" : 1 } ]

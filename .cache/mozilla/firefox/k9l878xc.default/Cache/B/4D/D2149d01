@@ -1,0 +1,1348 @@
+/**
+ *
+ * Introduction
+ * ============
+ * This model contains all relevant data about the notifications available to a given user, including:
+ *
+ *   o Notifications, indexed by category (source type, course, event, etc)
+ *   o Notification actors, indexed by their parent notifications
+ *   o Available categories
+ *   o Static information about registered sources
+ *
+ * The general philosophy of this model (and of Nautilus views in general), is as follows:
+ *
+ *   1) Load up all notifications for the current user immediately, on page load, and store them
+ *      in-page. This allows multiple views to share the same data, and for each view to react
+ *      appropriately to actions taken in their sibling views.
+ *
+ *   2) Load up notifications *actors* on demand, but share them among all views. They
+ *      will be saved by the model, individually and indexed by notification.
+ *
+ *   3) Perform all actions asynchronously -- which is to say, call down to the server
+ *      to ask the modules associated with each notification/actor how to respond
+ *      to an invoked action. The response is generally going to be a navigation,
+ *      and the modules will be responsible for telling us (via the Ajax response)
+ *      where to navigate to. We are taking this approach to avoid the bandwidth hit
+ *      of sending all navigational information up to the view, when, realistically,
+ *      the user will only invoke a very view of them before leaving the page.
+ *
+ *   4) Use a callback mechanism to inform both notification and actor containers when
+ *      their respective data is loaded -- we need to adopt this approach because
+ *      of the asynchronous nature of data loads.
+ *
+ *
+ * Loading Notifications
+ * =====================
+ * Notfication and source data are loaded asynchronously from the server, so the first step
+ * in dealing with this model is always a call to initNotifications(). Callers should not
+ * attempt to draw data from the model until the notification load is complete (signified by
+ * a return code of LOAD_COMPLETE from the call to initNotifications).
+ *
+ * *Note*: No attempt should be made to use any other functions in this package until
+ * initNotifications reports that the load is complete.
+ *
+ *
+ * Notification Grouping
+ * ======================
+ * The way that notifications are represented on the server does not always map exactly
+ * to the way that
+ *
+ *
+ * Registering Views
+ * =================
+ * The preferred mechanism for initializing a view is to register with the model, using the
+ * registerNotificationContainer function -- this accepts a a view container, which is basically
+ * an object that implements the "notificationLoaded" function. The NautilusView class
+ * provides a default implementation of this function. All registered containers will be
+ * informed when the notification load is complete.
+ *
+ *
+ * DWR & Implicit Data Structures
+ * ==============================
+ * This model uses several data structures that are automatically generated based on Java
+ * objects. This is made possible via a service called Direct Web Remoting (DWR), which
+ * facilitates and automates asynchronous, Ajax-based communications between client and server.
+ * The NautilusViewService object is our DWR-mediated interface to the backend.
+ *
+ * The data structures that we use to communicate with the server (and store in this model) are
+ * as follows:
+ *
+ *   o NotificationItemView          : A single notification item
+ *   o NotificationItemRecipientView : A single notification actor
+ *   o NotificationActionView        : Describes an action that can be invoked from the views
+ *   o NautilusSourceInfo            : Data on a single Nautilus source (key, name, events, actions)
+ *   o NautilusViewInfo              : Contains all available source information (NautilusSourceInfo
+ *                                     objects), and all notifications available for the current user.
+ *                                     Used for model initialization.
+ *
+ * Again, each of these objects is defined in the server layer, and translated dynamically into
+ * a corresponding set of javascript objects by DWR. For details on their contents, see the
+ * corresponding Java objects.
+ *
+ */
+var notification_controller = {
+
+  addWindowOnLoadEvent : false,
+  // the categories available for notification classifications
+  CATEGORY_SOURCE : 1,
+  CATEGORY_EVENT  : 2,
+  CATEGORY_COURSE : 3,
+  CATEGORY_DATE   : 4,
+
+
+  // the status of an item load
+  LOAD_NOT_STARTED : 1,
+  LOAD_IN_PROGRESS : 2,
+  LOAD_COMPLETE    : 3,
+
+  // the kinds of notification actors
+  RECIPIENT_SENDER    : "SENDER",
+  RECIPIENT_RECEIVER  : "RECEIVER",
+  RECIPIENT_NONE      : "NONE",
+
+  // the types of actions that can be requested by view items
+  ACTION_NAVIGATE  : "NAVIGATE",
+  ACTION_REMOVE    : "REMOVE",
+  ACTION_NONE      : "NONE",
+  ACTION_EMAIL     : "EMAIL",
+  ACTION_UPDATE    : "UPDATE",
+
+  // standard events
+  DUE_EVENT        : "DUE",
+
+  // the delimiter we use for compound keys
+  KEY_DELIMITER : "::",
+
+  // contains all notifications
+  notifications : $H(),
+
+  // organizes subsystems by their subystem
+  notificationsBySource : $H(),
+
+  // organizes notification by their subsystem/event type
+  notificationsByEvent : $H(),
+
+  // organizes notifications by their parent course
+  notificationsByCourse: $H(),
+
+  // organizes notifications by their due dates
+  notificationsByDate: $H(),
+
+  // organizes notifications by their true ids
+  notificationsById: $H(),
+
+  // notification actors (both senders and receivers)
+  actors : $H(),
+
+  // arrays of notification actors, indexed by their associated notification
+  actorsByNotification : $H(),
+
+  // hash of (sourceType::eventType,1)
+  sourceEvents : $H(),
+
+  // information about sources, including: source name, available events, available actions
+  sourceInfo : null,
+
+  // maps courses to the urls necessary to reach those courses' home page
+  courseLinks: null,
+
+  // all registered notification containers; containers are informed of all events in
+  // the models lifecycle
+  notificationContainers : {},
+
+  // listeners who just want to be informed when the notification load is complete
+  loadListeners : [],
+
+  // indicates whether the initial notification load is complete
+  notificationLoadStatus: this.LOAD_NOT_STARTED,
+
+  // data structures used by EWS:
+  courseIdToCourseNameMap : null,
+  courseIdToEwsItemListMap : null,
+  ewsIdToEwsItemMap : null,
+  sortedCourseIdsListForEws: null,
+
+  //the currently login user
+  userId: null,
+
+  // the date on which these notifications were last loaded
+  refreshDate: null,
+
+  //flag which determines if user is Observer
+  isObserver: false,
+
+  // the id of the course whose context we're in; null if we're not in a course
+  // context
+  courseId: null,
+  
+  // when requesting notifications from the server, indicate that there should be
+  // a cap on the number returned.  Usually set to true when there is no course or org
+  // context.
+  limitNotificationLoad: false,
+
+  /**
+   * Load up all notifications for the given user, and places them in the
+   * page model. Returns the load status.
+   *
+   * If the status is LOAD_IN_PROGRESS, then the caller should assume that the
+   * notifications have not yet been loaded. The loader service will
+   * call all registered containers when the load is complete.
+   *
+   * If the status is LOAD_COMPLETE, then the caller may begin to load
+   * notifications from the model immediately.
+   *
+   * *Warning*: Any attempt to deal with the model in any way before the
+   * status is LOAD_COMPLETE will unleash a horde of shambling COBOL mummies
+   * into your codebase. They will crush your meticulously constructed data
+   * structures into a pulpy chaos of semantic soup, and then launch into a
+   * terrifying moan-chorus of supulchral triumph.
+   *
+   * @param courseId The course we should load notifications for. Optional.
+   * @return         The status of the load
+   */
+  initNotifications : function() {
+
+    // initialize our logger
+    this.nautilusLog = log4javascript.getDefaultLogger();
+
+    // if this is the first time we're getting a load request
+    if (!this.notificationLoadStatus || this.notificationLoadStatus == this.LOAD_NOT_STARTED) 
+    {
+      // indicate that we're staring a load.
+      this.notificationLoadStatus = this.LOAD_IN_PROGRESS;
+
+      // call down to the server to get all notification info for the current user; this
+      // returns an aggregate data structure that contains both a list of all
+      // notifications and information about all registered sources
+      if ( this.limitNotificationLoad )
+      {
+        NautilusViewService.getViewInfoWithLimit( courseId, groupId, this.sourceEvents.keys(), document.location.href,
+                                         false, notification_controller.initCallBack.bind( this ) );
+      }
+      else
+      {
+        NautilusViewService.getViewInfo( courseId, groupId, this.sourceEvents.keys(), document.location.href,
+                                         false, notification_controller.initCallBack.bind( this ) );
+      }
+    }
+    return this.notificationLoadStatus;
+  },
+  
+  initCallBack : function( viewInfo )
+  {
+    // if there was an error retrieving the notifications, tell each module about it
+    if (viewInfo.errorMessage) {
+      module_controller.displayErrorMessage(viewInfo.errorMessage);
+    }   
+    // otherwise set up the model, then inform each registered view that its
+    // notifications are ready
+    else 
+    {
+      this.sourceInfo                    = viewInfo.sourceInfo;
+      this.courseLinks                   = viewInfo.courseLinks;
+      this.resources                     = viewInfo.resources;
+      this.courseIdToCourseNameMap       = viewInfo.courseIdToCourseNameMapForEws;
+      this.courseIdToEwsItemListMap      = viewInfo.courseIdToEwsDisplayMap;
+      this.ewsIdToEwsItemMap             = viewInfo.ewsIdToEwsDisplayMap;
+      this.sortedCourseIdsListForEws     = viewInfo.sortedCourseIdsListForEws;
+      this.expansionIds                  = $A(viewInfo.expansionIds) || {};
+      this.userId                        = viewInfo.userId;
+      this.refreshDate                   = viewInfo.refreshDate;
+      this.isObserver                    = viewInfo.isObserver;
+    
+      this._addNotifications(viewInfo.notifications);
+    
+      this.notificationLoadStatus = this.LOAD_COMPLETE;
+    
+      // tell all registered notification containers that we're finished
+      $H(this.notificationContainers).values().each( function(container) {
+        container.notificationsLoaded();
+      });
+    
+      // tell all listeners who are waiting for the load to complete that it
+      // has done so
+      this.loadListeners.each(function (listener) {
+        listener.loadComplete();
+      });
+    
+    }
+  },
+  
+  setLimitNotificationLoad : function ( flag )
+  {
+    // can be set by multiple modules on a page.  Maintain true value if set to true.
+    this.limitNotificationLoad = this.limitNotificationLoad || flag;
+  },
+
+  registerView : function( container ) {
+    this.courseId = container.courseId;
+    this.groupId = container.groupId;
+
+    // store Events to hash sourceEvents ( source::eventId )
+    var sourceIdsHash = $H(container.sourceIds);
+    sourceIdsHash.keys().each(function(source) {
+      sourceIdsHash.get(source).each(function(eventId) {
+        notification_controller.sourceEvents.set(source + notification_controller.KEY_DELIMITER + eventId, 1);
+      });
+    });
+    // Register the given notification container. All registered containers will be informed
+    // when notification load events occur (currently, this is limited to "notification load complete" events).
+    this.notificationContainers[container.viewId]= container;
+
+    // Invoke initNotifications() after page loading completes to ensure it is called after all the views on the page
+    // register themselves so it can loads notifications for the registered views all at once.
+    // Calling it too early can cause notifications for yet-to-register views to be missing
+    if (!this.addWindowOnLoadEvent) {
+      this.addWindowOnLoadEvent = true;
+      Event.observe(window, 'load', function() {
+        notification_controller.initNotifications();
+      });
+    }
+  },
+ 
+  /**
+   * Returns the status of the notification. It is not safe to interact with this model
+   * until the load status is LOAD_COMPLETE.
+   *
+   * @return The load status
+   */
+  getLoadStatus : function() {
+    return this.notificationLoadStatus;
+  },
+
+  // TODO: should all functions do a "notification load complete" check?
+
+  /**
+   * Returns a list of all sources that have associated notifications.
+   *
+   * @return A list of source keys
+   */
+  getSources: function () {
+    return this.notificationsBySource.keys();
+  },
+
+
+  /**
+   * Returns a list of all events that have associated notifications. The event
+   * key is a combination of both source type and event type, in the following
+   * format:
+   *
+   *   [sourcekey]::[eventKey]
+   *
+   * @param filter Optional parameter to specify events we care about
+   * @return       A list of event keys
+   */
+  getEvents: function(filter) {
+
+    var events = this.notificationsByEvent.keys();
+
+    if (filter) {
+      events = events.findAll ( function(event) {
+        return filter.find(function (item) { return item == event; });
+      });
+    }
+
+    return events;
+  },
+
+  /**
+   * Returns the translated title of the given event
+   *
+   * @param source The source to which the event belongs
+   * @param event  The name of the event
+   * @return       Event title
+   */
+  getEventTitle: function(source, event) {
+    return this.getSourceInfo(source).events[event];
+  },
+
+
+  /**
+   * Get the translated resource.
+   *
+   * @param key Resource key
+   * @return    Translated resource
+   */
+  getResource : function( key /*, arg1, arg2, ..., argN */ )
+  {
+    var result = null;
+    if ( key && this.resources && this.resources[key] )
+    {
+      result = this.resources[key];
+    }
+    if ( !result )
+    {
+       return "!!!!" + key + "!!!!!";
+    }
+    else
+    {
+      if ( arguments.length > 1 )
+      {
+        for ( var i = 1; i < arguments.length; i++ )
+        {
+          result = result.replace( new RegExp("\\{"+(i-1)+"\\}","g"), arguments[i] );
+        }
+      }
+      return result;
+    }
+  },
+
+  /**
+   * Returns a a list of all courses that have associated notifications.
+   *
+   * @return A list of all sources that have notifications
+   */
+  getCourses: function() {
+    return this.notificationsByCourse.keys();
+  },
+
+  /**
+   * Return the url to the course represented by the given id.
+   *
+   * @param courseId The id of the course whose link we seek
+   */
+  getCourseLink: function(courseId) {
+    return this.courseLinks[courseId];
+  },
+
+  /**
+   * Returns source information for the given notification.
+   *
+   * @param notificationId The notification we seek source info for
+   */
+  getSourceInfoForNotification : function(notificationId) {
+    return this.sourceInfo[this.notifications.get(notificationId).sourceType];
+  },
+
+
+  /**
+   * Returns the notification associated with the given id, or null if
+   * none exists
+   *
+   * @param id The notification id
+   * @return   The associated notification
+   */
+  getNotification: function (id) {
+    return this.notifications.get(id);
+  },
+
+
+  /**
+   * Returns source information for the given source type.
+   *
+   * @param sourceType The kind of source to grab information for
+   */
+  getSourceInfo : function(sourceType) {
+    return this.sourceInfo[sourceType];
+  },
+
+
+  /**
+   * Returns all notifications that belong to the given source type, optionally filtered
+   * by the specified event types.
+   *
+   * @param source The source whose events we seek
+   * @param events An optional array of desired events. If null, all notifiations for this source
+   *               are returned, regardless of event type
+   */
+  getNotificationsBySource : function(source, events) {
+
+    var notifications = this.notificationsBySource.get(source);
+
+    if (notifications && events) {
+
+      // drop the desired events into a hash, for faster comparisons
+      var eventsHash = $H();
+      events.each(function(item){ eventsHash.set(item,true); });
+
+      notifications = notifications.findAll(function(item){
+        return eventsHash.get(item.eventType);
+      });
+
+    }
+
+    return notifications;
+
+  },
+
+
+  /**
+   * Returns all notifications associated with the given event. The event
+   * must by fully-qualified:
+   *
+   *   <source type>::<event type>
+   *
+   * @param events The event whose notifications we seek - this can be a single
+   *               event or an array of events
+   * @return       The notifications, or null if no such notifiations exist
+   */
+  getNotificationsByEvent : function(events) {
+
+    if (events) {
+
+      var allNotifications = [];
+
+      [events].flatten().each(function (event) {
+        var notifications = this.notificationsByEvent.get(event);
+        if (notifications)
+        {
+          allNotifications.push(notifications);
+        }
+      }.bind(this));
+
+      return allNotifications.flatten();
+    }
+
+  },
+
+
+  /**
+   * Returns the notification associated with the given internal id, or null if
+   * none exists
+   *
+   * @param id The internal notification id
+   * @return   The associated notification
+   */
+  getNotificationByInternalId : function(id) {
+    return this.notificationsById.get(id);
+  },
+
+  /**
+  * Removes all of notifications from one block or one view, and informs all listeners about its passing.
+  *
+  * @param blockId The id of the block
+  * @param viewId  The id of the view
+  */
+  clearNotifications: function(viewId, blockId) {
+
+    var notificationViewIds = [];
+    var notificationIds = [];
+
+    var view = notification_controller.notificationContainers[viewId];
+
+    if (viewId && !blockId ){
+
+      var blocks = $H(view.blocks).values();
+
+      // loop through all the blocks in the view
+      blocks.each( function(block) {
+
+        // if this block maintains a list of notifications, gather them up
+        if (block.notifications) {
+
+          block.notifications.each(function(notification){
+            notificationViewIds.push(notification.viewId);
+            notification.notificationIds.each(function(notificationId){
+              notificationIds.push(notificationId);
+            });
+          });
+
+        }
+
+      });
+
+    }
+
+    if (blockId ) {
+
+      var block = view.blocks[blockId];
+
+      // if this block maintains a list of notifications, gather them up
+      if (block.notifications) {
+
+        block.notifications.each( function(notification) {
+          notificationViewIds.push(notification.viewId);
+            notification.notificationIds.each( function(notificationId) {
+            notificationIds.push(notificationId);
+          });
+        });
+
+      }
+
+    }
+
+    // only call down if we've got something to remove
+    if (notificationIds.length > 0) {
+
+      NautilusViewService.removeNotificationsFromUser(notificationIds, {
+
+        // display a message if the removal fails
+        errorHandler: function(message) {
+
+          // todo let's do something nicer than this, shall we?
+          alert("Error removing notifications! " + message);
+
+        },
+
+        // remove the notifications from the display if the removal succeeds
+        callback: function(item) {
+
+          notificationViewIds.each( function(notificationViewId) {
+
+            // remove the notification from the central hash, and from all categories
+            var notification = this.getNotification(notificationViewId);
+
+            // remove the notification from the central hash, and from all categories
+            this.notifications.unset(notificationViewId);
+            this._removeNotificationFromList(this.notificationsBySource.get(notification.sourceType), notificationViewId);
+            this._removeNotificationFromList(this.notificationsByEvent.get(this.buildEventKey(notification)), notificationViewId);
+            this._removeNotificationFromList(this.notificationsByCourse.get(notification.courseId), notificationViewId);
+
+            // tell all registered containers about the elision
+            $H(this.notificationContainers).values().each(function(container){
+              container.notificationRemoved(notificationViewId);
+            });
+
+          }.bind(this));
+        }.bind(this)
+
+      });
+
+    }
+
+  },
+
+  /**
+   * Removes the given notification from the model, and informs all listeners about its passing.
+   *
+   * @param notificatinViewId The id of the notification to remove
+   */
+  removeNotification: function(notificationViewId) {
+
+    var notification = this.getNotification(notificationViewId);
+
+    NautilusViewService.removeRecipient(notification.recipientId, {
+
+      // display a message if the removal fails
+      errorHandler: function(message) {
+        // todo let's do something nicer than this, shall we?
+        alert("Error removing notification! " + message);
+      },
+
+      // remove the actor from the display if the removal succeeds
+      callback: function(item) {
+        this._removeNotificationFromModel(notificationViewId);
+      }.bind(this)
+
+    });
+
+
+
+  },
+
+  /**
+   * Removes all actor entries for the current user from the given notificaiton.
+   *
+   * @param notificationViewId  The notification to act on
+   */
+  removeNotificationActorsForUser: function(notificationViewId) {
+
+    var notification = this.getNotification(notificationViewId);
+
+    NautilusViewService.removeNotificationsFromUser(notification.notificationIds, {
+
+      // display a message if the removal fails
+      errorHandler: function(message) {
+        // todo let's do something nicer than this, shall we?
+        alert("Error removing notification! " + message);
+      },
+
+      // remove the notification from the model if the removal succeeds
+      callback: function(item){
+        this._removeNotificationFromModel(notificationViewId);
+      }.bind(this)
+
+    });
+
+  },
+
+  /**
+   * Refreshes the notifications in all modules on the current page, by requesting a cache
+   * update and then reloading all notifications.
+   */
+  refreshNotifications: function() {
+
+    // reset the modules to "loading" state
+    module_controller.resetModules();
+
+    // tell all the views we're about to rain destruction down on the model
+    $H(this.notificationContainers).values().each( function(container) {
+      container.notificationsUnloaded();
+     });
+
+    // remove notifications from the model
+    this.notifications         = $H();
+    this.notificationsBySource = $H();
+    this.notificationsByEvent  = $H();
+    this.notificationsByCourse = $H();
+    this.notificationsByDate   = $H();
+    this.notificationsById     = $H();
+    this.actorsByNotification  = $H();
+    this.actors                = $H();
+
+    // invalidate the cache
+    NautilusViewService.refreshNotifications();
+
+    // force a reload
+    this.notificationLoadStatus = this.LOAD_NOT_STARTED;
+    this.initNotifications();
+
+  },
+
+
+  /**
+   * Removes the actor for the current user from the given notification.
+   *
+   * @param notificationId  The id of the notification whose actor must do the mortal-coil shuffle
+   * @param actorId         The local id of the actor; used only to determine which actor entry to remove from the view
+   */
+  removeActorForUser: function(notificationId, actorId) {
+
+    NautilusViewService.removeNotificationsFromUser([notificationId], {
+
+      // display a message if the removal fails
+      errorHandler: function(message) {
+        // todo let's do something nicer than this, shall we?
+        alert(message);
+      },
+
+      // remove the actor from the display if the removal succeeds
+      callback: function(item) {
+        this._removeActorFromModel(actorId);
+      }.bind(this)
+
+    });
+
+  },
+
+  /**
+   * Remove the given actor from the model, and inform all registered actor containers about
+   * the elision.
+   *
+   * @param actorId            The id of the actor to remove
+   */
+  removeActor: function(actorId) {
+
+    var actor = this.actors.get(actorId);
+
+    NautilusViewService.removeRecipient(actor.id, {
+
+      // display a message if the removal fails
+      errorHandler: function(message) {
+        // todo let's do something nicer than this, shall we?
+        alert(message);
+      },
+
+      // remove the actor from the display if the removal succeeds
+      callback: function(item) {
+        this._removeActorFromModel(actorId);
+      }.bind(this)
+
+    });
+
+  },
+
+
+  _removeActorFromModel: function(actorId){
+
+    var actor = this.actors.get(actorId);
+
+    if (actor) {
+
+      // remove it from the general store
+      this.actors.unset(actorId);
+
+      // now remove it from its parent notification bucket
+      var notificationBucket = this.actorsByNotification.get(actor.notificationId);
+
+      if (notificationBucket) {
+
+        actor = notificationBucket.each(function(item, index){
+          if (item.id == actorId) {
+            notificationBucket.splice(index, index);
+            throw $break;
+          }
+        });
+
+      }
+
+      // tell all registered containers about the elision
+      $H(this.notificationContainers).values().each(function(container){
+        container.actorRemoved(actorId);
+      });
+
+    }
+
+  },
+
+
+  /**
+   * Returns the actor with the given id, or null if none with that keys exists.
+   *
+   * @param actorId The id of the actor to look up
+   */
+  getActor : function(actorId) {
+    return this.actors.get(actorId);
+  },
+
+
+  /**
+   * Gets the actors associated with the given notification. If the actors have already
+   * been loaded, then the function will simply return them.
+   *
+   * If the actors have *not* yet been loaded (or are in the process of being loaded)
+   * the function will instead return a status of LOAD_IN_PROGRESS. If the calling container
+   * is registered, it will be informed when the actors have been loaded (as will
+   * all registered actor containers).
+   *
+   * @param notificationId The notification to load receivers for
+   * @param actorKind      The kind of actors to load -- senders or receivers
+   * @return               The receivers, or a status of LOAD_IN_PROGRESS
+   */
+  getActors: function (notificationId, actorKind) {
+
+    var actors = this.actorsByNotification.get(notificationId);
+
+    if ( actors )
+    {
+      return actors;
+    }
+    else
+    {
+      return this._loadActors(notificationId, actorKind);
+    }
+  },
+
+
+  /**
+   * Returns a list of the actions for the given notification. The list will vary based
+   * on whether the person been notified is a sender or a receiver.
+   *
+   * @param notificationId The notification whose actions we seek
+   * @return               A list of action keys, or null if no actions are defined
+   */
+  getNotificationActions : function(notificationId) {
+
+    var notification = this.getNotification(notificationId);
+    var sourceInfo   = this.sourceInfo[notification.sourceType];
+
+    // get the actions appropriate to the user's role in this notificaiton -- it varites
+    // based on whether he's a sender or a receiver
+    var actionMap =
+      notification.recipientType == this.RECIPIENT_SENDER ? sourceInfo.senderActions : sourceInfo.receiverActions;
+
+    // now get the specific actions for this event
+    return actionMap[notification.eventType];
+  },
+
+
+  /**
+   * Returns a list of the actions for the given actor.
+   *
+   * @param actor The actor whose actions we seek
+   * @return      A list of action keys, or null if no actions are defined
+   */
+  getActorActions : function(actorId) {
+    var notification = this.getNotification(this.actors.get(actorId).notificationViewId);
+    return this.sourceInfo[notification.sourceType].actorActions[notification.eventType];
+  },
+
+
+  /**
+   * Returns the action that the source associated with the given notificaiton has
+   * designated as the default.
+   *
+   * @param notificationId The id of a notification
+   */
+  getDefaultAction : function(notificationId) {
+    var notification = this.getNotification(notificationId);
+    return this.sourceInfo[notification.sourceType].defaultActions[notification.eventType];
+  },
+
+
+  /**
+   * Returns specific information about the given action.
+   *
+   * @param notificationId The notification with which this action is associated
+   * @param actionKey      The key that identifies the action
+   */
+  getNotificationActionInfo: function (notificationId, actionKey) {
+    return this.getNotificationActions(notificationId).find( function(item) { return item.actionKey == actionKey; });
+  },
+
+
+  /**
+   * Returns specific information about the given actor action.
+   *
+   * @param notificationId The actor with which whom action is associated
+   * @param actionKey      The key that identifies the action
+   */
+  getActorActionInfo: function (actorId, actionKey) {
+    return this.getActorActions(actorId).find( function(item) { return item.actionKey == actionKey; });
+  },
+
+
+  /**
+   * Handles an action request coming from a notification. Sends a request down to the
+   * associated souirce module to do the actual processing. If the action involves a navigation,
+   * it will occur after the module supplies the necessary information.
+   *
+   * @param notificationId The notification we're acting on
+   * @param actionKey      The action key
+   */
+  handleNotificationAction : function(notificationId, actionKey, defaultAction) {
+
+    var actionInfo = defaultAction ? this.getDefaultAction(notificationId) : this.getNotificationActionInfo(notificationId, actionKey);
+    var notification = this.getNotification(notificationId);
+
+    NautilusViewService.handleNotificationAction( notification.sourceType, notification.recipientType, notification.notificationIds[0], actionKey, function(item) {
+
+      // rewrite the navigation URL so that it appears in the context of the appropriate course
+      if (actionInfo.actionKind == this.ACTION_NAVIGATE) {
+        if ( item.indexOf( "&isLaunchInNewWindow=true" ) < 0 )
+        {
+          var url = this.getCourseLink(notification.courseId) + encodeURIComponent(encodeURIComponent(item));
+          window.parent.location = url;
+        }
+        else
+        {
+          window.open( item );
+        }
+      }
+
+    }.bind(this));
+
+  },
+
+
+  /**
+   * Handles an action request coming from a notification actors. Sends a request down to the
+   * associated module to do the actual processing. If the action involves a navigation,
+   * it will occur after the module supplies the necessary information. If it involves
+   * the removal of an actor, the deletion will occur after the module responds, and
+   * will be propagated to all subscribing actor containers.
+   *
+   * @param actorId   The actor on which an action was invoked
+   * @param actionKey The action key
+   */
+  handleActorAction : function(actorId, actionKey) {
+
+    var notification = this.notifications.get(this.actors.get(actorId).notificationViewId);
+    var actionInfo = this.getActorActionInfo(actorId, actionKey);
+
+    // for email actions, just forward to the email page
+    if (actionKey == this.ACTION_EMAIL) {
+
+      var actor = this.getActor(actorId);
+      var emailUrl = "/webapps/blackboard/execute/displayEmail?navItem=";
+
+      var defaultId;
+
+      if (actor.groupId) {
+        emailUrl += "cp_send_email_select_groups";
+        defaultId = actor.groupId;
+      }
+
+      else {
+        emailUrl += "cp_send_email_select_students";
+        defaultId = actor.userId;
+      }
+
+      window.parent.location =
+        this.getCourseLink(notification.courseId) +
+          encodeURIComponent(
+            encodeURIComponent(
+              emailUrl += "&course_id=" + notification.courseId + "&default_id=" + defaultId));
+
+    }
+
+    else {
+
+      // call down to the server to handle the action; when the response comes back,
+      // act based on the action kind
+      NautilusViewService.handleActorAction( notification.sourceType, actorId, actionKey, function(item) {
+
+        // TODO: we need to make sure the action was successful before we do any of this stuff
+
+        // if this is a navigation action, then the module should have returned the url to
+        // navigate to; follow it
+        if (actionInfo.actionKind == this.ACTION_NAVIGATE) {
+          window.parent.location = this.getCourseLink(notification.courseId) + encodeURIComponent(encodeURIComponent(item));
+        }
+
+        // if this is a removal action, then delete the actor
+        else if (actionInfo.actionKind == this.ACTION_REMOVE) {
+          this.removeActor(actorId);
+        }
+
+      }.bind(this));
+
+    }
+  },
+
+  /**
+   * Register the expansion state of the given node. Implicitly pegs the state to
+   * the current page context.
+   *
+   * @param nodeId   The id of the node in question
+   * @param expanded The expansion state - true if expanded, false otherwise
+   */
+  registerNodeExpansion: function (nodeId, expanded) {
+    NautilusViewService.handleExpansion(nodeId, document.location.href, expanded);
+  },
+
+
+  /**
+   * Returns true if the given node is expanded, for the current context. This
+   * represents the saved session expansion state.
+   *
+   * @param nodeId  The node whose expansion state we seek
+   */
+  isNodeExpanded: function(nodeId) {
+    return this.expansionIds.include(nodeId);
+  },
+
+
+  /**
+   * Register a listener who wants to be informed when the notification model is
+   * finished loading. If you want your listener to be informed of every event
+   * in the model's lifecycle, use registerNotificationContainer instead.
+   *
+   * @param listener The object to inform of the load
+   */
+  registerLoadListener: function(listener) {
+    this.loadListeners.push(listener);
+  },
+
+
+
+  /**
+   *
+   * @param {Object} item
+   */
+  buildEventKey: function(item) {
+    return item.sourceType + this.KEY_DELIMITER + item.eventType;
+  },
+
+  parseEventKey: function(eventKey) {
+    return eventKey.split(this.KEY_DELIMITER);
+  },
+
+  buildEwsItemKey: function(ewsItem) {
+    return ewsItem.viewId + this.KEY_DELIMITER + ewsItem.ruleId;
+  },
+
+
+
+  // --------------- private functions
+
+
+  /**
+   * Loads sender or receiver actors for the given notification, by calling down to the
+   * server.
+   *
+   * If the actors for the given notification have already been loaded, then simply
+   * returns a status of LOAD_COMPLETE.
+   *
+   * Otherwise, calls down to the server to retrieve the requested data, and calls out to all
+   * subscribing actor containers when the data come back.
+   *
+   * @param notificationId The notification whose receivers we need to load
+   * @param actorKind      Sender or receiver
+   * @return               LOAD_COMPLETE if the receivers have already been loaded; LOAD_IN_PROGRESS
+   *                       otherwise.
+   */
+  _loadActors: function (notificationId, actorKind) {
+
+    var actors = this.actors.get(notificationId);
+
+    if (actors) {
+      return this.LOAD_COMPLETE;
+    }
+
+    else {
+
+      // grab all the ids of the concrete notifications that are represented by
+      // this notification view
+      var ids = this.getNotification(notificationId).notificationIds;
+
+      // call down to the server to retrieve all receivers for this notification
+      NautilusViewService.getNotificationActors(ids, actorKind, function(items) {
+
+        // if there are any actors to display
+        if (items && items.length > 0) {
+
+          // add them to the model
+          this._addActors(items, notificationId);
+
+          // call out to all listeners
+          $H(this.notificationContainers).values().each(function(container){
+            container.actorsLoaded(notificationId, items);
+          });
+
+        }
+
+      }.bind(this));
+
+      return this.LOAD_IN_PROGRESS;
+    }
+
+  },
+
+   /**
+   * Adds the given value to the array in the given hash bucket. Creates the
+   * array if it's not already there.
+   *
+   * @param hash  The hash we're working with
+   * @param key   The key representing the bucket we want to insert at
+   * @param value The value we're inserting
+   */
+  _smartPush: function(hash, key, value) {
+    if ( !hash.get(key) )
+    {
+      hash.set(key, $A());
+    }
+    hash.get(key).push(value);
+  },
+
+
+  /**
+   * Removes the notification with the given id from the given list of notifications.
+   *
+   * @param list               The list to remove notificaitons from
+   * @param notificationViewId The id of the notification to remove
+   */
+  _removeNotificationFromList: function(list, notificationViewId) {
+    list.each(function(item, index) {
+      if (item.viewId == notificationViewId) {
+        list.splice(index, index);
+        throw $break;
+      }
+    });
+  },
+
+  /**
+   * Adds notifications to the model, assigning each to the appropriate classification.
+   *
+   * @param list The list of notifications.
+   */
+  _addNotifications: function (list) {
+
+    // add the notification to the main model, as well as all the different category views
+    $(list).each ( function (item) {
+      this.notifications.set(item.viewId, item);
+      this._smartPush(this.notificationsBySource, item.sourceType, item);
+      this._smartPush(this.notificationsByEvent, this.buildEventKey(item), item);
+      this._smartPush(this.notificationsByCourse, item.courseId, item);
+
+      item.notificationIds.each(function (id) {
+        this.notificationsById.set(id, item);
+      }.bind(this));
+
+      if (item.eventType == this.DUE_EVENT) {
+        this._smartPush(this.notificationsByDate, this.normalizeDate(item.dueDate).getTime(), item);
+      }
+
+    }.bind(this));
+
+  },
+
+
+  /**
+   * Removes all traces of the notification represented by the given view id from the model.
+   *
+   * @param notificationViewId The notification that we MUST DESTROY!
+   */
+  _removeNotificationFromModel: function(notificationViewId) {
+
+    var notification = this.getNotification(notificationViewId);
+
+    // remove the notification from the central hash, and from all categories
+    this.notifications.unset(notificationViewId);
+    this._removeNotificationFromList(this.notificationsBySource.get(notification.sourceType), notificationViewId);
+    this._removeNotificationFromList(this.notificationsByEvent.get(this.buildEventKey(notification)), notificationViewId);
+    this._removeNotificationFromList(this.notificationsByCourse.get(notification.courseId), notificationViewId);
+
+    // tell all registered containers about the elision
+    $H(this.notificationContainers).values().each(function(container) {
+      container.notificationRemoved(notificationViewId);
+    });
+
+  },
+
+
+
+  /**
+   * Adds the given actors to the model, indexing them by notification id.
+   *
+   * Note: it is assumed that all actors passed in belong to the given notification.
+   * If they do not, tiny code-locusts will descend from the heavens and chatter
+   * through your code, reducing them to torn husks of ones and zeroes. So
+   * beware.
+   *
+   * @param actors              An array of actors to add.
+   * @param notificationViewId  The view id notification to which the actors belong.
+   */
+  _addActors: function(actors, notificationViewId) {
+
+    // first add the actor to the general store
+    actors.each( function(actor) {
+
+      // add the view id of the parent notification to the actor object
+      actor.notificationViewId = notificationViewId;
+      this.actors.set(actor.id, actor);
+    }.bind(this));
+
+    // now add them to the notification-specific store
+    if ( !this.actorsByNotification.get(notificationViewId))
+    {
+      this.actorsByNotification.set(notificationViewId, $A());
+    }
+    this.actorsByNotification.get(notificationViewId).concat(actors);
+
+
+  },
+
+
+  /**
+   * Returns a list of alphabetically sorted courses that has EWS which the user can access.
+   *
+   * @return A list of course that has EWS which the user can access.
+   */
+  getSortedCoursesForEWS: function() {
+    return this.sortedCourseIdsListForEws;
+  },
+
+  /**
+   * Returns the course name.
+   *
+   * @return course name
+   */
+  getCourseName: function( courseId ) {
+    return this.courseIdToCourseNameMap[courseId];
+  },
+
+  /**
+   * Returns the NautilusEwsRuleDisplayItem object for the specified ews item id.
+   *
+   * @return NautilusEwsRuleDisplayItem object
+   */
+  getEwsItem: function(ewsItemId) {
+    return this.ewsIdToEwsItemMap[ewsItemId];
+  },
+
+  /**
+   * Returns the NautilusEwsRuleDisplayItem object for the specified ews item id.
+   *
+   * @return URL for a ACTION_NAVIGATE or updated HTML for ACTION_UPDATE
+   */
+  handleEwsAction : function( ewsId, actionKey )
+  {
+    var ewsItem = this.getEwsItem(ewsId);
+    var actionInfo = this.getGeneralActionInfo(ewsItem.sourceType, ewsItem.eventType, actionKey);
+
+
+    if (actionInfo.actionKind == this.ACTION_NAVIGATE)
+    {
+      NautilusViewService.handleGeneralAction( ewsItem.sourceType, ewsItem.courseId, ewsId, actionKey, function(item)
+      {
+        window.parent.location = this.getCourseLink(ewsItem.courseId) + encodeURIComponent(encodeURIComponent(item));
+      }.bind(this));
+    }
+    else if (actionInfo.actionKind == this.ACTION_UPDATE)
+    {
+      NautilusViewService.handleUpdateGeneralAction( ewsItem.sourceType, ewsItem.courseId, ewsId, actionKey, ewsItem.viewId, function(refreshedEwsItem)
+      {
+        // build new item key
+        var ewsItemKey = this.buildEwsItemKey( refreshedEwsItem );
+        if ( refreshedEwsItem.ruleFound )
+        {
+          // add item to data structures
+          this.ewsIdToEwsItemMap[refreshedEwsItem.ruleId] = refreshedEwsItem;
+          var ewsItemsList = this.courseIdToEwsItemListMap[refreshedEwsItem.courseId];
+          var existingEwsItem = ewsItemsList.find( function(item) { return item.ruleId == refreshedEwsItem.ruleId; } );
+          existingEwsItem.warnedCount = refreshedEwsItem.warnedCount;
+          existingEwsItem.lastRefreshDate = refreshedEwsItem.lastRefreshDate;
+          existingEwsItem.ruleTitleDisplay = refreshedEwsItem.ruleTitleDisplay;
+          existingEwsItem.ruleName = refreshedEwsItem.ruleName;
+          existingEwsItem.lastRefreshDate = refreshedEwsItem.lastRefreshDate;
+
+          // build new line item
+          var ewsView = notification_controller.notificationContainers[refreshedEwsItem.viewId];
+          var newLineItem = ewsView.buildLineItem(refreshedEwsItem.ruleId, refreshedEwsItem);
+
+          // replace existing line item with new line item
+          var parentNode = $(ewsItemKey).parentNode;
+          var oldNode = $(ewsItemKey);
+          parentNode.replaceChild(newLineItem, oldNode);
+        } else {
+          // delete the item
+            $(ewsItemKey).remove();
+          }
+        }.bind(this));
+      }
+    },
+
+    /**
+   * Returns the NautilusEwsRuleDisplayItem object in a course.
+   *
+   * @return a list of NautilusEwsRuleDisplayItem objects that are in a course
+   */
+  getEwsItemListForCourse: function( courseId ) {
+    return this.courseIdToEwsItemListMap[courseId];
+  },
+
+   /**
+   * Returns specific information about the given action.
+   *
+   * @param sourceType     The source type with which this action is associated
+   * @param eventType      The event type with which this action is associated
+   * @param actionKey      The key that identifies the action
+   */
+  getGeneralActionInfo: function (sourceType, eventType, actionKey) {
+    return this.getGeneralActions(sourceType, eventType).find( function(item) { return item.actionKey == actionKey; });
+  },
+
+  /**
+   * Returns a list of the general actions for the given sourceType, eventType.
+   *
+   * @param sourceType     The source type
+   * @param eventType      The event type
+   * @return               A list of action keys, or null if no actions are defined
+   */
+  getGeneralActions : function(sourceType, eventType) {
+
+    var sourceInfo = this.sourceInfo[sourceType];
+
+    // gets the general notification, e.g. non notiication types, such as EWS, discussions
+    var actionMap = sourceInfo.generalActions;
+
+    // now get the specific actions for this event
+    return actionMap[eventType];
+  },
+
+  /**
+   * Returns a list of the general actions for an EWS item.
+   *
+   * @param ewsItemId      The id of the EWS item for which to get the general actions.
+   * @return               A list of action keys, or null if no actions are defined
+   */
+  getGeneralActionsByEwsId : function(ewsItemId) {
+
+  var ewsItem = this.getEwsItem(ewsItemId);
+    return this.getGeneralActions( ewsItem.sourceType, ewsItem.eventType );
+  },
+
+
+  /**
+   * Normalize the given date to remove any time information.
+   *
+   * @param date The date to normalize
+   * @return     The same date, shorn of all time info.
+   */
+  normalizeDate: function (date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0);
+  }
+
+};
+

@@ -1,0 +1,22 @@
+printing original list: 
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+printing list after removing duplicates: 
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1

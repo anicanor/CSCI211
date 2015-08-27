@@ -1,0 +1,44 @@
+cd ~
+if [ -f 211 ] ; then 
+  echo "renaming file ~/211 to ~/211.file"
+  mv 211 211.file
+fi
+
+if [ -d 211 ] ; then 
+  echo "renaming directory ~/211 to ~/211.old"
+  mv 211 211.old
+fi
+
+echo "Creating a 211 directory in your home directory"
+mkdir 211
+chmod 700 211
+echo "Creating project and lab directories in the 211 directory"
+cd 211
+mkdir lab01
+mkdir lab02
+mkdir lab03
+mkdir lab04
+mkdir lab05
+mkdir lab06
+mkdir lab07
+mkdir lab08
+mkdir lab09
+mkdir lab10
+mkdir lab11
+mkdir lab12
+mkdir lab13
+mkdir lab14
+mkdir lab15
+mkdir p1
+mkdir p2
+mkdir p3
+mkdir p4
+mkdir p5
+mkdir p6
+mkdir p7
+mkdir p8
+cd ~
+echo "Creating short cut commands (e.g. p1 == cd ~/211/p1)"
+cat /user/faculty/tyson/211bin/211_bashrc >> .bashrc
+echo "Type the following command at the $."
+echo "$ source .bashrc"

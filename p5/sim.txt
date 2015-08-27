@@ -1,0 +1,36 @@
+
+if(!checkout_q.empty())
+{
+  for(int i=0; i<num_checkers; i++)
+  {
+    if(checkers[i].m_cust != NULL && checkers[i].m_available_time == clock)
+    {
+      Cust *checkout = checkout_q.dequeue();
+      checkers[i].m_cust=checkout;
+        if(checkers[i].m_cust->m_robber())
+        {
+          cout << "break3" << endl;
+          checkers[i].m_cust->print_done_checkout_robber(cout,clock,checkers[i].money,i);
+          cout << "break4" << endl;
+          checkers[i].money = 0;
+        }
+        else
+        {
+          checkers[i].money = checkers[i].money + checkers[i].m_cust->money_earned();
+          checkers[i].m_cust->print_done_checkout_shopper(os, clock, checkers[i].money, i);
+        }
+    }
+    delete [] checkers[i].m_cust;
+    num_customers--;
+    checkers[i].m_cust=NULL;
+  }
+ for(int i=0; i< num_checkers && checkout_q.empty() == false; i++)
+ {
+      checkers[i].m_available_time =  checkers[i].m_cust->checkout_time() + checkers[i].m_available_time;
+      // checkers[i].m_cust->done_checkout_time(checkers[i].m_available_time);
+      checkers[i].m_cust->print_start_checkout(os, clock, i);
+      if(checkers[i].m_cust->m_robber())
+        checkers[i].m_available_time = checkers[i].m_available_time+break_duration;
+ }
+}
+

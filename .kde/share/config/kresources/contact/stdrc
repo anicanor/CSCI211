@@ -1,0 +1,12 @@
+[General]
+PassiveResourceKeys=
+ResourceKeys=Gwro1S215q
+Standard=Gwro1S215q
+
+[Resource_Gwro1S215q]
+FileFormat=vcard
+ResourceIdentifier=Gwro1S215q
+ResourceIsActive=true
+ResourceIsReadOnly=false
+ResourceName=Default Address Book
+ResourceType=file

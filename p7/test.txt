@@ -1,0 +1,19 @@
+insert 1
+insert 3
+insert 4
+insert 6
+insert Thursday
+insert Wednesday
+echo Number of nodes in tree:
+size
+echo Distance is: 
+distance
+find Monday
+find Sunday
+echo The nodes in depth-first order:
+print
+echo The nodes in breadth-first order:
+breadth
+balanced
+rebalance
+

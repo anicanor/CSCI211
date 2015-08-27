@@ -1,0 +1,48 @@
+kcminputrc Mouse cursorTheme 'Oxygen_White'
+/user/student/xjin/.kde/share/config/kcminputrc
+!/usr/share/config/kcminputrc
+*
+kcminputrc Mouse cursorSize ''
+/user/student/xjin/.kde/share/config/kcminputrc
+!/usr/share/config/kcminputrc
+*
+ksplashrc KSplash Theme Default
+!/user/student/xjin/.kde/share/config/ksplashrc
+!/usr/share/config/ksplashrc
+*
+ksplashrc KSplash Engine KSplashX
+!/user/student/xjin/.kde/share/config/ksplashrc
+!/usr/share/config/ksplashrc
+*
+krandrrc Display ApplyOnStartup false
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+krandrrc Display StartupCommands ''
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+krandrrc [Screen0]
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+krandrrc [Screen1]
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+krandrrc [Screen2]
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+krandrrc [Screen3]
+!/user/student/xjin/.kde/share/config/krandrrc
+!/usr/share/config/krandrrc
+*
+kcmfonts General forceFontDPI 0
+!/user/student/xjin/.kde/share/config/kcmfonts
+!/usr/share/config/kcmfonts
+*
+kdeglobals Locale Language '' # trigger requesting languages from KLocale
+/user/student/xjin/.kde/share/config/kdeglobals
+!/usr/share/config/kdeglobals
+*

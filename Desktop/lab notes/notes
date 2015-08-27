@@ -1,0 +1,13 @@
+bobby(x,second,z)
+
+int means integer (-3943, 26, 9994593)
+float means real, floating point number (3.14, -9.0, ...)
+
+
+:g1
+i
+{
+return 32;
+i
+
+}

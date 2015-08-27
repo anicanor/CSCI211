@@ -1,0 +1,156 @@
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	cust.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	cust.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	cust.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	cust.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	pqueue.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	pqueue.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	pqueue.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	pqueue.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	sim.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-c
+	sim.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	sim.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-c
+	sim.cpp
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-o
+	sim
+	cust.o
+	pqueue.o
+	sim.o
+
+called: /Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/usr/bin/g++
+	-Wall
+	-pedantic
+	-g
+	-o
+	sim
+	cust.o
+	pqueue.o
+	sim.o
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-o
+	sim
+	cust.o
+	pqueue.o
+	sim.o
+
+called: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	/Users/Shirley/Desktop/School/CSCI211/p5/p5 2
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+	-Wall
+	-pedantic
+	-g
+	-o
+	sim
+	cust.o
+	pqueue.o
+	sim.o
+

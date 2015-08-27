@@ -1,0 +1,793 @@
+/* Grading.css */
+
+.fullScreen, .inlineGrader {
+  width: 100%;
+  height: 100%; }
+
+.hide {
+  /*accessibly hidden*/
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
+.borderBox, * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.radiusSmall, .submission.download .fileTile {
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px; }
+
+.dropShadow, .attemptsList {
+  -webkit-box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.3); }
+
+.insetShadowSmall, .submission.download .fileTile, .inlineButton:hover {
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) inset; }
+
+
+.nonSelectable, .gradingPanel h3, .subHeader, .attemptListBtn, .attemptsList ul li, .gradeHeader .subHeader, .miniBadge {
+  /*disable text highlight*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.transition, .inlineButton:hover, .commentSubmit:focus {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.translucent {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -khtml-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7; }
+
+.opaque {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -khtml-opacity: 1;
+  opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1; }
+
+.noMinWidth {
+  min-width: 0; }
+
+.inlineGrader {
+  background-color: #dfdfdf;
+  position: relative;
+  float: left;
+  min-height: 420px;
+  min-width: 863px; }
+
+.inlineGrader .docViewer{
+	position: absolute;
+	top: 36px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding:0;
+}
+
+/* Snapshot Panel */
+.previewer {
+  top: 0;
+  bottom: 0;
+  width: 62%;
+  position: absolute;
+  min-width: 300px;
+  border-bottom:1px solid #999; }
+
+.submission {
+  left: 25px;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  overflow: auto;
+  position: absolute; }
+
+.submission.file iframe {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc; }
+
+.submission.text {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: auto;
+  padding: 60px 80px; }
+
+.submission.download .fileTile {
+  margin: 20% auto 0 auto;
+  width: 210px;
+  padding: 20px;
+  display: block;
+  border: 2px solid #fff;
+  background-color: #eee;
+  text-align: center;
+  overflow:hidden;
+  word-wrap:break-word;}
+  .submission.download .fileTile img {
+    margin-bottom: 10px; }
+  .submission.download .fileTile span {
+    display: block;
+    clear: both;
+    margin: 5px;
+    color: #777;
+    font-size: 11px; }
+  .submission.download .fileTile .download {
+    margin-top: 30px;
+    display: block; }
+
+.gradingPanel {
+  position: relative;
+  height: auto;
+  width: 38%;
+  min-height: 600px;
+  float: right;
+  background-color: #fff;
+  padding: 31px 0 0 0;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999; }
+  .gradingPanel h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 0;
+    color: #3c3c3c; }
+  .gradingPanel h3 {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 10px 0 10px 15px;
+    text-transform: uppercase; }
+
+.detailsHeader {
+  height: 31px;
+  display: block;
+  line-height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #c5c5c5;
+  overflow: hidden;
+  background-image: url("../images/description-icon.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #3c3c3c;
+  border-bottom: 1px solid #555; }
+  .detailsHeader span {
+    font-size: 13px;
+    padding-left: 15px; }
+  .detailsHeader:hover {
+    background-color: #3c3c3c;
+    color: #fff; }
+
+#assignmentDetails {
+  padding: 15px; }
+  #assignmentDetails h3 {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 0 3px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;  }
+  #assignmentDetails p, #assignmentDetails ul {
+    margin-bottom: 20px;
+	word-wrap:break-word;}
+  #assignmentDetails table.stats {
+    border: 1px solid #ccc;
+    width: 100%; }
+    #assignmentDetails table.stats tr:first-child {
+      background-color: #ccc; }
+    #assignmentDetails table.stats td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 5px; }
+      
+.attempt {
+  width: 100%; }
+  .attempt#instructions h4 {
+    margin-bottom: 5px;
+    font-size: 18px; }
+  .attempt#instructions p {
+    line-height: 18px;
+    margin-bottom: 14px; }
+
+.attemptHeader {
+  height: 55px;
+  min-width: 305px;
+  background-color: #666;
+  position: relative;
+  border-top: 1px solid #555; }
+  .attemptHeader h3 {
+    float: left;
+    margin: 10px 0 0 15px;
+    position: relative;
+    color: #fff; }
+
+.gradeSubmissionPanel {
+  background-color: #eee;
+  padding: 10px 0; }
+  .gradeSubmissionPanel h4 {
+    border-bottom: none !important; }
+
+.panelHandle {
+  display: block;
+  height: 10px;
+  background: url("../images/drag-handle.png") no-repeat center center #eeeeee;
+  text-align: center; }
+  .panelHandle:hover {
+    background-color: #ddd; }
+
+.grade.readOnly {
+  border:none; 
+  background:transparent; }
+  .grade.readOnly .pointsPossible {
+    color: #fff; }
+  .grade.readOnly .gradeEntry {
+    color: #fff; }
+
+.grade.locked {
+  background-color: #3c3c3c; }
+  .grade.locked .pointsPossible {
+    color: #fff; }
+    .grade.locked .pointsPossible:hover {
+      cursor: not-allowed; }
+  .grade.locked .gradeEntry {
+    color: #fff; }
+  .grade.locked .gradeEntry:hover {
+      cursor: not-allowed; }
+
+.locked:hover {
+  cursor: not-allowed; }
+ .gradeEntry.overridden{
+ 	 background: url("../images/overridden-icon.png") 30px center no-repeat;
+ }
+
+.grade {
+  display: inline-block;
+  position: absolute;
+  margin: 10px 15px 0 0;
+  z-index: 1;
+  right: 0;
+  background-color: #fff;
+  height: 32px;
+  border: 1px solid #666; }
+
+.gradeEntry {
+  background: transparent;
+  font-size: 18px !important;
+  border: 1px solid transparent;
+  font-weight: 800;
+  text-align: right;
+  color: #3c3c3c;
+  height: 30px;
+  width: 130px;
+  float: left; /* Meddled by Developer */ }
+
+.pointsPossible {
+  float: right;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  height: 30px;
+  margin-right: 5px;
+  color: #666; }
+
+.subHeader {
+  clear: left;
+  color: #555;
+  display: block;
+  float: left;
+  margin: 1px 0 0 15px;
+  line-height: 14px;
+  font-size: 12px; }
+
+.attemptListBtn {
+  background: transparent;
+  float: left;
+  width: 100%;
+  height: 100%; }
+  .attemptListBtn:hover {
+    cursor: pointer; }
+     .attemptListBtn h3:after {
+      content: url("../images/arrowDown.png");
+      position: absolute;
+      top: 5px;
+      right: -15px; }
+
+
+.gradeSaveBtn {
+  height: 20px;
+  width: 50%;
+  top: 31px;
+  right: -1px;
+  background-color: #0d8800;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  line-height: 18px;
+  border: 1px solid #666; }
+  .gradeSaveBtn span {
+    margin-left: -5px; }
+    .gradeSaveBtn span:before {
+      content: url("../images/save-icon.png");
+      margin-right: 5px; }
+  .gradeSaveBtn:hover {
+    background-color: #196b00; }
+
+.gradeCancelBtn {
+  height: 20px;
+  width: 50%;
+  top: 31px;
+  left: -1px;
+  background-color: #DFDFDF;
+  position: absolute;
+  text-align: center;
+  color: #333;
+  line-height: 18px;
+  border: 1px solid #666; }
+
+.attemptsList {
+  position: absolute;
+  z-index: 4;
+  top: 54px;
+  width: 100%;
+  height: auto;
+  background-color: #555;
+  border-bottom: 1px solid #acacad; }
+  .attemptsList .subHeader {
+    margin-left: 15px; }
+  .attemptsList p {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: default;
+    float: left;
+    margin: 10px 0 0 15px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800; }
+  .attemptsList ul li {
+    border-top: 1px solid #888;
+    height: 63px; }
+    .attemptsList ul li.current {
+      background-color: #555; }
+    .attemptsList ul li:hover {
+      background-color: #444; }
+  .attemptsList .pointsGraded {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    min-width: 26px; }
+    .attemptsList .pointsGraded img {
+      margin-top: 12px; }
+
+.gradeHeader {
+  height: 70px;
+  min-width: 305px;
+  background-color: #3c3c3c;
+  position: relative;
+  border: none; }
+  .gradeHeader h3 {
+    float: left;
+    margin: 10px 0 0 15px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff; }
+  .gradeHeader span.date {
+    font-size: 11px; }
+  .gradeHeader .subHeader {
+    color: #eee;
+    clear: left;
+    display: block;
+    float: left;
+    margin: 1px 0 0 15px;
+    line-height: 14px;
+    font-size: 10px; }
+
+.groupList {
+  padding: 15px; }
+  .groupList .grade {
+    margin: 0;
+    position: static;
+    float: right;
+    left: auto;
+    top: auto;
+    border: none; }
+  .groupList span {
+    line-height: 30px; }
+  .groupList li {
+    clear: both;
+    display: block;
+    height: 30px; }
+
+.expandCollapseSwitch {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  height: 15px;
+  line-height: 11px;
+  margin: 7px 0;
+  float: right;
+  padding: 1px 6px;
+  text-align: center;
+  text-transform: lowercase;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  color: #3c3c3c; }
+  .expandCollapseSwitch:hover {
+    background-color: #eee; }
+
+.miniBadge {
+  display: inline-block;
+  font-size: 11px;
+  float: right;
+  font-weight: 800;
+  height: 15px;
+  line-height: 11px;
+  margin: 7px 0;
+  padding: 0 4px;
+  text-align: center;
+  text-transform: lowercase;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #666;
+  color: #fff; }
+
+.attemptContent {
+  position: relative;
+  min-width: 305px;
+  background-color: #fff;
+  width: 100%; }
+  .attemptContent form {
+    margin-top: -1px; }
+  .attemptContent .textboxToolbar {
+    margin: -2px 0 15px 0;
+    height: 25px;
+    background-color: #eee;
+    border: 1px solid #ccc; }
+    /* Meddled by Devloper - just selector and margin-top */
+    .attemptContent a.textboxToolbarBtn {
+      display: block;
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin-top: -23px;
+      background-repeat: no-repeat;
+      background-position: center center;
+	  background-color:#fff;
+	  border:1px solid #ddd;}
+      .attemptContent a.textboxToolbarBtn:hover {
+        border: 1px solid #bbb;
+        cursor:pointer; }
+      .attemptContent a.richText {
+        background-image: url("../images/rich-text-icon.png"); 
+        margin-left: 3px; }
+      a.textboxToolbarBtn.attachFile {
+        background-image: url("../images/upload-attachment-icon.png"); 
+        margin-left: 26px; }
+.attemptContent .segment {
+    margin-top: 20px;
+    float:left;
+    width:100%; }
+  .attemptContent h4 {
+    color: #666;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    line-height: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400; }
+    .attemptContent h4:hover {
+      cursor: default; }
+  .attemptContent p {
+    color: #777;
+    line-height: 20px; }
+
+.dateStamp {
+  color: #ccc; }
+
+.attachment {
+  padding: 5px 40px 5px 55px;
+  min-height: 30px;
+  display: block;
+  background-position: 19px center;
+  background-color: transparent;
+  background-repeat: no-repeat; }
+  .attachment:hover {
+    text-decoration: underline; }
+  .attachment.selected {
+    background-color: #bdf0f9;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; }
+
+.filesList {
+  list-style: decimal inside;
+  padding: 0;
+  margin-top: -1px; }
+  .filesList li {
+    display: block;
+    position:relative; }
+  .filesList .downloadFile {
+    position: absolute;
+    top: 50%;
+	right:10px;
+	margin-top:-10px;}
+  .filesList .dwnldBtn {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url("../images/download-icon.png") no-repeat center center white;
+    border: 1px solid #ccc; }
+    .filesList .dwnldBtn:hover {
+      background-color: #f5f5f5;
+      border-color: #ccc; }
+  .filesList .fileSize {
+    display: block;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 4px;
+    position: absolute;
+    right: 25px;
+    color: #777; }
+
+.gradingNoteWrapper, .rubricWrapper {
+  padding: 15px; }
+
+.inlineButton {
+  width: 25px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 4;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-color: #eee;
+  color: #333;
+  height: 24px;
+  line-height: 21px; }
+  .inlineButton.expanded {
+    background-color: #ccc; }
+  .inlineButton.note {
+    background-image: url("../images/grading-note-icon.png");
+    background-position: center center;
+    font-size: 11px;
+    height: 24px;
+    left: -31px;
+    top: 4px;
+    width: 24px; }
+  .inlineButton.rubric {
+    background-image: url("../images/rubrics-icon.png");
+    background-position: 5px center;
+    font-size: 11px;
+    padding: 0 5px 0 18px;
+    width: auto;
+    background-color: #f9f9f9;
+    border-color: #ccc; }
+  .inlineButton.override {
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/override-icon.png");
+    background-position: center center;
+    background-color:#4c4c4c;
+    border-color:#333; }
+  .inlineButton.revert {
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/revert-icon.png");
+    background-position: center center; 
+    background-color:#dfdfdf;
+    border-color:#ccc; }
+  .inlineButton:hover {
+    border: 1px solid #888;
+    cursor:pointer; }
+
+
+.docFile {
+  background-image: url("../images/doc-icon.png"); }
+
+.genericFile {
+  background-image: url("../images/genericFile-icon.png"); }
+
+.textFile {
+  background-image: url("../images/textFile-icon.png"); }
+
+/* BEGIN FEEDBACK/GN UI */
+.feedbackWrapper {
+  padding: 0 15px; position:relative; }
+.feedbackWrapper .dateStamp{
+	color:#999;}
+.feedbackWrapper .vtbegenerated{
+	margin-top:10px !important;
+}
+.gradingPanel .button-4 {
+  margin-top: 10px;
+  float: right; }
+.gradingPanel .avatar {
+  float: left;
+  padding: 0;
+  display: inline-block;
+  margin: 0 15px 10px 0;
+  width: 24px;
+  height: 24px;
+  background-color: #fff; }
+.gradingPanel .comment {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px; }
+  .gradingPanel .comment h5 {
+    display: block;
+    font-size: 13px;
+    color: #3c3c3c; }
+  .gradingPanel .comment .dateStamp {
+    line-height: 15px;
+    font-size: 12px; }
+  .gradingPanel .comment p {
+    clear: both;
+    color: #666;
+    padding-left: 40px; }
+  .gradingPanel .comment .attachedFiles {
+    margin-top: 10px;
+    display: block; }
+  .gradingPanel .comment .attachment {
+    padding-left: 25px;
+    background-position: 0 center; }
+  .gradingPanel #feedback_filePicker div.field, .gradingPanel #notes_filePicker div.field{
+    background-color:rgba(255, 255, 255, 0.9);
+    bottom: 22px;
+    display: inline-block;
+    height: auto;
+    left: 13px;
+    line-height: 40px;
+    margin: 3px;
+    overflow: hidden;
+    position: absolute;
+    right: 13px;
+    width: auto;
+    word-break: normal;
+    word-wrap: break-word;
+	  border-top:1px solid #ddd;}
+  .gradingPanel #feedbackFiles_csBrowse, .gradingPanel #feedbackFiles_localBrowse,
+  .gradingPanel #noteFiles_localBrowse, .gradingPanel #noteFiles_csBrowse{
+    margin:7px -1px 7px 7px;}
+  .gradingPanel #feedbackFiles_listHtmlDiv .label, .gradingPanel #noteFiles_listHtmlDiv .label{
+	  display:none;}
+  .gradingPanel #feedbackFiles_table, .gradingPanel #noteFiles_table {
+	  margin:20px 5px;}
+  .gradingPanel .fileInputWrapper{
+	  margin-right:0;}
+  .gradingPanel .defaultSkin td.mceToolbar{
+  min-width: 100%;}
+  .gradingPanel .mceFirst .mceFirst:hover{
+	background-color:#fff;
+  }  .gradingPanel .mceLast .mceLast:hover{
+	background-color:#eee;}
+.gradingPanel .textboxtable{margin-top:15px;}
+.commentSubmit {
+  width: 100%;
+  font-size: 13px;
+  line-height: 155%;
+  font-family: "Lucida Grande", Arial, sans-serif;
+  padding: 5px 0 5px 8px;
+  resize: none;
+  clear: both;
+  width: 100%;
+  height: 60px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  overflow: auto; }
+  .commentSubmit:focus {
+    border: 1px solid #777; }
+
+.submitComment {
+  background-color: #3c3c3c;
+  color: #e9e9eb;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  height: 19px;
+  line-height: 19px;
+  margin: 5px 5px 0 0;
+  text-align: center;
+  width: 64px; }
+
+/* END FEEDBACK/GN UI */
+.stream_show_more_data {
+  color: rgba(0, 0, 0, 0.4);
+  font: 19px/27px Georgia, serif;
+  margin: 0 auto 0 -170px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  top: 20%;
+  left: 50%;
+  width: 340px; }
+
+.stream_show_more_data .main-message {
+  font: 600 23px "Helvetica Neue",sans-serif;
+  margin-bottom: 6px; }
+
+.stream_show_more_data .extras:after {
+  bottom: -56px;
+  color: rgba(0, 0, 0, 0.4);
+  content: url("../images/loading.gif");
+  font-size: 48px;
+  left: 50%;
+  margin-left: -14px;
+  position: absolute; }
+ 
+.gradingPanel .userInfo{
+font-weight: bold;
+line-height: 20px;
+display: block;
+margin-top: 10px;
+ }
+.gradingPanel .userInfo img{
+	/* should be removed after adding the .avatar class to the avatar image */
+	background-color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin: 0 15px 10px 0;
+    padding: 0;
+    width: 24px;
+}
+/*Student view override for bottom buttons*/
+#bottom_submitButtonRow {
+    float:right !important;
+    max-width:38% !important; 
+    padding:15px !important;
+}
+  
+/* DEVELOPER CUSTOMIZATION */
+.gradeActions {
+  text-align: right;
+  display: block;
+  margin: 20px 15px;
+  position: relative;
+  float:right;
+  overflow:visible;}
+.gradeActions a{
+  display: inline-block;
+  margin-top: 5px;
+}
+.gradeActions div {
+  cursor: pointer;
+  display: inline-block;
+}
+

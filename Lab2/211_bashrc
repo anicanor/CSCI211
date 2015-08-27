@@ -1,0 +1,35 @@
+# the following was added to this .bashrc file by running
+# the script /user/faculty/tyson/211bin/211_setup
+
+# add tyson's 211bin directory to path
+# add the current directory "." to the path
+PATH=$PATH:.:/user/faculty/tyson/211bin
+
+alias p1='cd ~/211/p1'
+alias p2='cd ~/211/p2'
+alias p3='cd ~/211/p3'
+alias p4='cd ~/211/p4'
+alias p5='cd ~/211/p5'
+alias p6='cd ~/211/p6'
+alias p7='cd ~/211/p7'
+alias p8='cd ~/211/p8'
+
+alias l1='cd ~/211/lab01'
+alias l2='cd ~/211/lab02'
+alias l3='cd ~/211/lab03'
+alias l4='cd ~/211/lab04'
+alias l5='cd ~/211/lab05'
+alias l6='cd ~/211/lab06'
+alias l7='cd ~/211/lab07'
+alias l8='cd ~/211/lab08'
+alias l9='cd ~/211/lab09'
+alias l10='cd ~/211/lab10'
+alias l11='cd ~/211/lab11'
+alias l12='cd ~/211/lab12'
+alias l13='cd ~/211/lab13'
+alias l14='cd ~/211/lab14'
+alias l15='cd ~/211/lab15'
+
+alias ls='ls -F'
+alias vi=/usr/bin/vim
+alias scite=/usr/bin/SciTE

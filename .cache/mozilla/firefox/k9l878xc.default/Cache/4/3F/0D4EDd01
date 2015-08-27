@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--each of these three regions, when used, much start with a #START-ROOT-CODE comment-->
+<!--See http://www.hannonhill.com/new-kb/Available-System-Tags/-->
+
+
+
+<head>
+    <meta content="1200" http-equiv="refresh" />
+
+    <title>Home - CSU, Chico</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    
+    
+    <meta content="Cascade Server" name="generator" />
+    
+    
+<link href="_assets/2.0/styles/framework.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="_assets/2.0/styles/global.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="_assets/2.0/styles/framework-print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="_assets/2.0/styles/print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="_assets/2.0/styles/mobile.css" media="mobile" rel="stylesheet" type="text/css" />
+
+    
+    
+    
+<link href="_home-page/_assets/styles/framework.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="_home-page/_assets/styles/screen.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="_home-page/_assets/styles/emergency.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="_home-page/_assets/styles/framework-print.css" media="print" rel="stylesheet" type="text/css" />
+<link href="_home-page/_assets/styles/print.css" media="print" rel="stylesheet" type="text/css" />
+
+    
+    
+    
+    
+    <!-- 
+Stuff in this javascript block is going to be on _every_ page, so use it extremely wisely!
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript" ></script>
+<script src="_assets/2.0/scripts/global.js" type="text/javascript" ></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      showSpecialLogo(); // shows the special logo to the left of csuc signature
+      searchBox($('#searchbox'));
+      dropDownify($('#quicklinks'));
+      dropDownify($('#task-nav'));
+    });
+</script>
+
+    
+    
+    
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div id="skip"><a href="#content">Skip to Main Content</a></div>
+             
+        <div class="span-31" id="header">
+            <div class="span-12" id="header-signature">
+<div id="special" ></div>
+<a href="/" title="California State University, Chico"><img alt="CSU, Chico" src="_assets/2.0/images/csuc-signature.jpg" /></a></div><!-- END header-signature -->
+            <div class="span-19 last" id="header-col2"> 
+                <ul id="task-nav">
+<li><a href="http://portal.csuchico.edu/">Portal</a></li>
+<li class="dropdown"><a href="#">E-Mail&#160;<img alt="click to choose your email" src="_assets/2.0/images/email-arrow.jpg" /></a> 
+<ul>
+<li><a href="http://silk.csuchico.edu/">MS Exchange</a></li>
+<li><a href="http://www.csuchico.edu/google/">WildcatMail</a></li>
+</ul>
+</li>
+<li><a href="http://www.csuchico.edu/catalog/">Catalog</a></li>
+<li><a href="http://www.csuchico.edu/schedule/">Class Schedule</a></li>
+<li><a href="maps/campus/index.shtml">Campus Maps</a></li>
+<li><a href="http://www.csuchico.edu/directory/">Directory</a></li>
+<li class="last"><a href="http://www.csuchico.edu/library/">Library</a></li>
+</ul> 
+                <div id="searchbox">
+                    <form action="http://search.csuchico.edu/" id="site-search-form" method="get">
+	<fieldset>
+		<legend>CSU, Chico Search:</legend>
+		<label for="site-search-query">Search CSU, Chico:</label>
+		<input id="site-search-query" name="q" type="text" value="Search CSU, Chico" />
+		<input id="site-search-submit" name="submit" type="submit" value="Go" />
+	</fieldset>
+</form> 
+                </div><!-- END searchbox -->
+            </div><!-- END header-col2 -->
+        </div><!-- END header -->
+        
+        <div class="span-31" id="topnav">
+            <div class="span-24" id="topnav-col1">
+                <ul id="main-nav"><li class="currentpage"><a href="index.shtml">Home</a></li><li><a href="about/index.shtml">About Chico State</a></li><li><a href="http://www.csuchico.edu/admissions">Admissions</a></li><li><a href="academics/index.shtml">Academics</a></li><li><a href="http://www.chicowildcats.com/">Athletics</a></li><li><a href="student-life/index.shtml">Student Life</a></li><li><a href="http://www.csuchico.edu/giving/">Give a Gift</a></li></ul>
+            </div> <!-- END topnav-col1 -->
+            <div class="span-7 last" id="topnav-col2">       
+                <ul id="quicklinks"><li><h2><a href="#">Quicklinks</a></h2><ul><li><a href="arc/index.shtml">Accessibility Resource Center</a></li><li><a href="http://em.csuchico.edu/aap/">Advising</a></li><li><a href="http://www.aschico.com/">Associated Students</a></li><li><a href="http://www.chicostatewildcatstore.com/home.aspx">Chico State Wildcat Store</a></li><li><a href="diversity/index.shtml">Office of Diversity and Inclusion</a></li><li><a href="emergencyprep/index.shtml">Emergency Preparedness Information</a></li><li><a href="employment/index.shtml">Employment Opportunities</a></li><li><a href="fa/index.shtml">Financial Aid &amp; Scholarship Office</a></li><li><a href="http://www.csuchico.edu/housing">Housing</a></li><li><a href="http://www.csuchico.edu/sfin/payment-info/payment-methods.shtml">Pay Student Fees</a></li><li><a href="http://www.csuchico.edu/rce">Regional and Continuing Education</a></li><li><a href="safety/index.shtml">Safety at Chico State</a></li><li><a href="shs/index.shtml">Student Health Service</a></li><li><a href="studyabroad/index.shtml">Study Abroad</a></li><li><a href="sustainability/index.shtml">Sustainability at Chico State</a></li><li><a href="http://www.csuchico.edu/sro/forms/transcript.shtml">Transcript Request</a></li><li><a href="http://www.csuchico.edu/up">University Police</a></li><li><a href="http://www.csuchico.edu/va/">Veterans Affairs</a></li></ul></li></ul>
+            </div><!-- END topnav-col2 -->
+        </div><!-- END topnav -->
+        
+        
+        <div class="span-31" id="big-picture"><div id="big-picture-link"><a href="big-picture/international.shtml"><img alt="international" src="big-picture/_assets/images/large/2013f-international.jpg" /></a></div><div id="big-picture-items"><a class="top" href="#">up</a><div id="big-picture-list"><ul><li class="active" id="international"><a href="big-picture/international.shtml"><img alt="International" src="big-picture/_assets/images/thumbnail-color/2013f-international-color.jpg" /></a></li><li id="stacy canada"><a href="big-picture/sustainability.shtml"><img alt="Sustainability" src="big-picture/_assets/images/thumbnail-bw/sustainability-bw.jpg" /></a></li><li id="students"><a href="big-picture/students.shtml"><img alt="Students" src="big-picture/_assets/images/thumbnail-bw/2013f-success-bw.jpg" /></a></li><li id="almlie in lab"><a href="big-picture/research.shtml"><img alt="Research" src="big-picture/_assets/images/thumbnail-bw/research-bw.jpg" /></a></li><li id="experience"><a href="big-picture/experience.shtml"><img alt="Experience" src="big-picture/_assets/images/thumbnail-bw/2013f-experience-bw.jpg" /></a></li><li id="jenny with plane"><a href="big-picture/northstate.shtml"><img alt="North State" src="big-picture/_assets/images/thumbnail-bw/northstate-bw.jpg" /></a></li><li id="jamile balli"><a href="big-picture/staff.shtml"><img alt="Staff" src="big-picture/_assets/images/thumbnail-bw/staff-bw.jpg" /></a></li><li id="jaxon with two students and ipads"><a href="big-picture/learning.shtml"><img alt="Learning" src="big-picture/_assets/images/thumbnail-bw/learning-bw.jpg" /></a></li><li id="service"><a href="big-picture/service.shtml"><img alt="Service" src="big-picture/_assets/images/thumbnail-bw/2013f-service-bw.jpg" /></a></li><li id="career-center"><a href="big-picture/career-center.shtml"><img alt="Careers" src="big-picture/_assets/images/thumbnail-bw/careers-bw.jpg" /></a></li></ul></div><a class="bottom" href="#">down</a></div></div>
+        <div class="span-31" id="content"> 
+            <div class="span-7 append-1" id="col1">
+                <ul id="audience-nav"><li><!--/csuchico/www/prospective-students/index - --><a href="prospective-students/index.shtml">Prospective Students</a></li><li><!--/csuchico/www/current-students/index - --><a href="current-students/index.shtml">Current Students</a></li><li><!--/csuchico/www/faculty-staff/index - --><a href="faculty-staff/index.shtml">Faculty and Staff</a></li><li><!--/csuchico/www/parents/index - --><a href="parents/index.shtml">Parents</a></li><li class="last"><!--/csuchico/www/_common/content-components/audience-nav/alumni - --><a href="http://www.csuchico.edu/alumni">Alumni</a></li></ul>
+                <div id="highlights"><h2 class="hide">Highlights</h2><a href="http://www.csuchico.edu/bic/"><img alt="Book in Common 2013" src="highlights/_assets/images/book-in-common.jpg" /></a><a href="http://www.csuchico.edu/cadec/awareness/labor.shtml "><img alt="Labor Day—Information and Updates" src="highlights/_assets/images/labor-day.gif" /></a><a href="http://www.csuchico.edu/mobile/"><img alt="Get the Mobile App" src="highlights/_assets/images/mobile-app.jpg" /></a></div>
+            </div> <!-- END col1 -->
+            <div class="span-6 append-1" id="col2">
+                <h2><span class="bkg">Top News Stories</span> </h2><p><img alt="Dan Guistina" class="img-left" src="home-page-news/_assets/images/giustina.jpg" /><strong>Largest Scholarship Gift in Campus History</strong><br />The University is recognized as a leader in CA higher ed. <a href="http://www.csuchico.edu/news/current-news/8-22-13-2mil-gift-for-ag-students-establishes-largest-scholarship-in-univ-history.shtml">Full Story</a></p><p><strong>Watch the video</strong><br />Philanthropist Dan Giustina gives $2M for ag scholarships. <a href="http://youtu.be/wtouq1jNkPY">Full Story</a></p><p><strong>President Zingg's Three-Year Review</strong><br />Read the open letter from Chancellor White explaining the process (pdf). <a href="http://www.csuchico.edu/prs/announcements/letter.pdf">Full Story</a></p><p><a href="http://www.csuchico.edu/pa/">More News Stories</a></p>
+            </div> <!-- END col2 -->
+            <div class="span-6 append-1" id="col3">
+                <h2><span class="bkg">Events</span> </h2><div><p><a href="http://www.csuchico.edu/bccer/announcements/intern_orientation.shtml ">Outdoor Education Internship Orientation</a><br />Aug. 28, 9:00 AM<br />SSC 466</p><p><a href="http://www.csuchico.edu/announcements-campus/announcements/current/part-time.shtml">Fall Opening Reception</a><br />Aug. 28, 5:00 PM<br />Museum of Anthropology</p><p><a href="http://www.aschico.com/gsec/gsecinternships">Gender and Sexuality Equity Center Internship Fair</a><br />Aug. 28, 7:00 PM<br />BMU 005</p></div><ul><li><a href="http://www.csuchico.edu/announcements-campus/index.shtml" title="Go to the Campus Announcements page.">Campus Announcements</a></li><li><a href="http://events.csuchico.edu/">Campus Calendar</a></li><li class="calendar-parent"><a href="http://events.csuchico.edu/" id="callout_trigger" title="Go to the Campus Calendar page.">More Campus Calendars +</a><ul class="calendar-list" id="callout"><li class="p-right"><a href="javascript:void(0)" id="close"><img alt="click to close" class="img-close" src="../../../_assets/2.0/images/close.jpg" /></a></li><li><a href="http://www.csuchico.edu/apss/calendar.shtml" title="Go to the Academic Calendar page.">Academic Calendar</a></li><li><a href="http://www.csuchico.edu/schedule/" title="Go to the Schedule page.">Important Dates &amp; Deadlines</a></li><li><a href="http://www.csuchico.edu/faaf/calendar/" title="Go to the Faculty Affairs Calendar PDF.">CSU, Chico Faculty and Staff Calendar (pdf)</a></li><li><a href="http://www.csuchico.edu/hfa/chicoarts/artsinfo.html" title="Go to the School of Arts Events page.">School of Arts Events</a></li><li><a href="http://www.chicowildcats.com/calendar.aspx" title="Go to the Athletics Events page.">Athletic Events</a></li><li><a href="http://www.chicoperformances.com/" title="Go to the Chico Performance website.">Chico Performances</a></li></ul></li></ul><a href="http://www.csuchico.edu/boxoffice" title="Go to the Box Office page."><img alt="visit the university box office website to purchase event tickets" class="box-office-link" src="_home-page/_assets/images/box-office-ticket.jpg" /></a>
+            </div> <!-- END col3 -->
+            <div class="span-8 append-1 last" id="col4">
+                <h2 class="hide">Discover Chico</h2><ul id="discover-chico"><li><a href="best-of-csuchico/index.shtml">Best of Chico State</a></li><li><a href="http://www.csuchico.edu/northstate/">Serving the North State</a></li><li><a href="visit-chico-state/index.shtml">Visit Chico State</a></li><li><a href="maps/index.shtml">Maps &amp; Tours</a></li><li><a href="our-region/index.shtml">Things to Do</a></li></ul>
+                <script type="text/javascript"><!--
+                var images = new Array(
+        '1.jpg'
+        ,
+        '10.jpg'
+        ,
+        '11.jpg'
+        ,
+        '12.jpg'
+        ,
+        '13.jpg'
+        ,
+        '14.jpg'
+        ,
+        '15.jpg'
+        ,
+        '16.jpg'
+        ,
+        '17.jpg'
+        ,
+        '18.jpg'
+        ,
+        '6.jpg'
+        ,
+        '2.jpg'
+        ,
+        '7.jpg'
+        ,
+        '8.jpg'
+        ,
+        '9.jpg'
+        ,
+        '3.jpg'
+        ,
+        '4.jpg'
+        ,
+        '5.jpg'
+        );
+                var max = images.length;
+                var num = Math.floor((Math.random() * max));
+                document.writeln("<img src='/discover-chico/_assets/images/" + images[num] + "' alt=' ' name='template_photo' width='240' height='219' border='0' id='template_photo'/>");
+            --></script>
+            </div> <!-- END col4 -->
+        </div><!-- END content --> 
+                 
+        <div class="span-31" id="footer">
+            <div class="prepend-1 span-6 append-1" id="footer-address">
+                <p>California State University, Chico<br />
+400 West First Street<br />
+Chico, CA 95929<br />
+530-898-4636</p>
+            </div><!-- END footer-address -->
+            <div class="span-3 append-1" id="footer-contact">
+                <ul>
+<li><a href="mobile/index.shtml" title="View app landing page.">Mobile App</a></li>
+<li><a href="contact/index.shtml">Contact Us</a></li>
+<li><a href="help/index.shtml">Help</a></li>
+<li><a href="about-site/index.shtml">About this Site</a></li>
+</ul>
+            </div><!-- END footer-address -->
+            <div class="span-5 append-1" id="footer-fineprint1">
+                <ul>
+<li><a href="http://www.collegeportraits.org/CA/Chico">College Portrait</a></li>
+<li><a href="emergencyprep/index.shtml">Emergency Preparedness</a></li>
+<li><a href="employment/index.shtml">Employment Opportunities<br />
+</a></li>
+</ul>
+            </div><!-- END footer-fineprint1 -->
+            <div class="span-3 append-1" id="footer-social">
+                <a class="social-media-connect" href="pa/social-media/hub.shtml" title="View Social Media Hub"><img alt="View Social Media Hub" height="70" src="_home-page/_assets/images/wildcat-connect.jpg" width="120" /></a>
+            </div><!-- END footer-social -->
+            <div class="span-8 last" id="footer-fineprint2">
+                <p><a href="arc/accessibility.shtml" title="If you are having difficulty accessing content on this page, ">Report an accessibility issue</a></p>
+<p>This page and its contents copyright &#169; 2012-2013 California State University, Chico.<br />
+ All Rights Reserved</p>
+           </div><!-- END footer-fineprint2 -->
+        </div><!-- END footer -->
+        <div class="hidden" itemtype="http://schema.org/Organization"><a href="http://www.csuchico.edu/" itemprop="url"><img alt="Chico State Seal" height="154" itemprop="logo" src="desweb/resources/images/seal154r.gif" width="154" /></a></div>
+    </div><!-- END container -->
+    <script type="text/javascript">
+  //<![CDATA[
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+  try {
+    var pageTracker = _gat._getTracker("UA-942024-1");
+    pageTracker._trackPageview();
+  } catch(err){}
+  //]]>
+</script>
+
+    
+    
+    
+    <script type="text/javascript">
+      var bp_data = {
+        'rotating' : {
+          
+    'international' : {
+			'index' : '1',
+			'large-image' : '/big-picture/_assets/images/large/2013f-international.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/2013f-international-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/2013f-international-bw.jpg',
+			'link' : '/big-picture/international.shtml',
+			'alt' : 'international'
+    }
+    ,
+    'stacy canada' : {
+			'index' : '2',
+			'large-image' : '/big-picture/_assets/images/large/sustainability.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/sustainability-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/sustainability-bw.jpg',
+			'link' : '/big-picture/sustainability.shtml',
+			'alt' : 'Stacy Canada'
+    }
+    ,
+    'students' : {
+			'index' : '3',
+			'large-image' : '/big-picture/_assets/images/large/2013f-success.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/2013f-success-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/2013f-success-bw.jpg',
+			'link' : '/big-picture/students.shtml',
+			'alt' : 'students'
+    }
+    ,
+    'almlie in lab' : {
+			'index' : '4',
+			'large-image' : '/big-picture/_assets/images/large/research-lg.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/research-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/research-bw.jpg',
+			'link' : '/big-picture/research.shtml',
+			'alt' : 'Almlie in lab'
+    }
+    ,
+    'experience' : {
+			'index' : '5',
+			'large-image' : '/big-picture/_assets/images/large/2013f-experience.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/2013f-experience-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/2013f-experience-bw.jpg',
+			'link' : '/big-picture/experience.shtml',
+			'alt' : 'experience'
+    }
+    ,
+    'jenny with plane' : {
+			'index' : '6',
+			'large-image' : '/big-picture/_assets/images/large/northstate-lg.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/northstate-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/northstate-bw.jpg',
+			'link' : '/big-picture/northstate.shtml',
+			'alt' : 'Jenny with plane'
+    }
+    ,
+    'jamile balli' : {
+			'index' : '7',
+			'large-image' : '/big-picture/_assets/images/large/staff.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/staff-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/staff-bw.jpg',
+			'link' : '/big-picture/staff.shtml',
+			'alt' : 'Jamile Balli'
+    }
+    ,
+    'jaxon with two students and ipads' : {
+			'index' : '8',
+			'large-image' : '/big-picture/_assets/images/large/learning-lg.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/learning-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/learning-bw.jpg',
+			'link' : '/big-picture/learning.shtml',
+			'alt' : 'Jaxon with two students and iPads'
+    }
+    ,
+    'service' : {
+			'index' : '9',
+			'large-image' : '/big-picture/_assets/images/large/2013f-service.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/2013f-service-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/2013f-service-bw.jpg',
+			'link' : '/big-picture/service.shtml',
+			'alt' : 'service'
+    }
+    ,
+    'career-center' : {
+			'index' : '10',
+			'large-image' : '/big-picture/_assets/images/large/careers-lg.jpg',
+			'thumbnail-color' : '/big-picture/_assets/images/thumbnail-color/careers-color.jpg',
+			'thumbnail-bw' : '/big-picture/_assets/images/thumbnail-bw/careers-bw.jpg',
+			'link' : '/big-picture/career-center.shtml',
+			'alt' : 'career-center'
+    }
+    
+        }
+      }
+    </script><script charset="utf-8" type="text/javascript">
+	$(document).ready(function() {
+		$('#callout_trigger').callout({ flyout : '#callout' });
+		$.getScript('/big-picture/_assets/scripts/big-picture.js', function(){
+			$('#big-picture').bigpicture();
+			$(document).everyTime(12000, function(i) {
+				if ($('#big-picture-list ul li.active').next().is('li')) {
+					$.bigpicture.activate($('#big-picture-list ul li.active').next());
+				} else {
+					$.bigpicture.activate($('#big-picture-list ul li').first());
+				}
+			}, 0);
+		});
+	});
+	</script>
+    <script src="http://s3.amazonaws.com/new.cetrk.com/pages/scripts/0010/9610.js" type="text/javascript"> </script>
+    
+</body>
+</html>
